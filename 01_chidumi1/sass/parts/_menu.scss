@@ -11,6 +11,43 @@
     }
 
     &__title{
-        // 
+        font-size: 2.8rem;
+        font-weight: 600;
+    }
+
+    &__list{
+        
+        margin-top: 89px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item{
+        cursor: pointer;
+        line-height: 1;
+        text-align: center;
+        & + &{
+            margin-left: 39px;
+        }
+        &:hover{
+            opacity: .6;
+        }
+
+        &--img{
+            width: 280px;
+            height: 200px;
+            img{
+                height: 100%;
+            }
+        }
+
+        &--title{
+            margin-top: 29px;
+        }
+
+        &--desc{
+            margin-top: 28px;
+        }
+
     }
 }
