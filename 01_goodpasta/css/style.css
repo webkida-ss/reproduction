@@ -301,11 +301,6 @@ a
     text-align: center;
 }
 
-.menu__item + .menu__item
-{
-    margin-left: 39px;
-}
-
 .menu__item:hover
 {
     opacity: .6;
@@ -371,10 +366,9 @@ a
     margin: 35px auto 0 0;
 }
 
-.about__img
+.about__img img
 {
-    width: 450px;
-    height: 300px;
+    width: 100%;
 }
 
 @media (max-width: 559px)
@@ -385,7 +379,7 @@ a
     }
     .inner
     {
-        width: auto;
+        width: 92%;
     }
     .hidden-pc
     {
@@ -458,18 +452,6 @@ a
 
         margin-top: 15px;
     }
-    .about
-    {
-        margin-top: 100px;
-    }
-    .about__inner
-    {
-        display: block;
-    }
-    .about__content
-    {
-        text-align: center;
-    }
     .about__content--title
     {
         font-size: 2.6rem;
@@ -482,14 +464,8 @@ a
 
         margin-top: 19px;
     }
-    .about__link
-    {
-        margin: 20px auto 0;
-    }
     .about__img
     {
-        width: 100%;
-        height: auto;
         margin-top: 50px;
     }
 }
@@ -499,5 +475,78 @@ a
     .hidden-tab
     {
         display: none;
+    }
+    .header__title
+    {
+        width: 40%;
+        height: auto;
+    }
+    .menu__item
+    {
+        width: 30%;
+        margin: auto;
+    }
+    .menu__item--img img
+    {
+        height: auto;
+    }
+    .menu__item--img
+    {
+        width: 100%;
+        height: auto;
+    }
+    .menu__item--title
+    {
+        font-size: 2.4rem;
+
+        margin-top: 20px;
+    }
+    .menu__item--desc
+    {
+        margin-top: 20px;
+    }
+    .about__content--title
+    {
+        font-size: 2.8rem;
+
+        margin-top: 20px;
+    }
+    .about__content--text
+    {
+        font-size: 1.8rem;
+
+        margin-top: 20px;
+    }
+    .about__img
+    {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 960px)
+{
+    .menu__item + .menu__item
+    {
+        margin-left: 39px;
+    }
+}
+
+@media (max-width: 959px)
+{
+    .about
+    {
+        margin-top: 100px;
+    }
+    .about__inner
+    {
+        display: block;
+    }
+    .about__content
+    {
+        text-align: center;
+    }
+    .about__link
+    {
+        margin: 20px auto 0;
     }
 }

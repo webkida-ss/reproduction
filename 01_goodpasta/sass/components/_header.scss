@@ -16,6 +16,10 @@
 	}
 	&__title {
 		height: 45px;
+		@include mq(tab-only) {
+			width: 40%;
+			height: auto;
+		}
 		a {
 			display: block;
 			height: inherit;
@@ -46,16 +50,11 @@
 		&--list {
 			display: flex;// 横並び
 			align-items: center;// 上下中央揃え
-
 		}
 		&--item {
 
 			& + & {
 				margin-left: 32px;
-
-				@include mq(tab-only) {
-					// margin-left: *px;
-				}
 				@include mq(sp) {
 					margin-left: 37px;
 				}
