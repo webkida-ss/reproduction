@@ -93,8 +93,6 @@
 .util {
 	$util-link-width-pc: 140px;
 	$util-link-height-pc: 48px;
-	$util-link-width-sp: $util-link-width-pc;
-	$util-link-height-sp: $util-link-height-pc;
 
 	// 共通リンクボタン
 	&__link {
@@ -102,22 +100,17 @@
 		height: $util-link-height-pc;
 		margin: 0 auto;
 		font-weight: bold;
-		// font-size: *rem;
+		font-size: 1.8rem;
 		line-height: $util-link-height-pc;
 		text-align: center;
-
-		@include mq(sp) {
-			width: $util-link-width-sp;
-			height: $util-link-height-sp;
-			// font-size: *rem;
-			line-height: $util-link-height-sp;
-		}
 
 		a {
 			display: block;
 			width: 100%;
 			height: 100%;
 			border: 1px solid $orange;
+			border-radius: 15px;
+			color: $orange;
 			transition: all .5s ease 0s;
 			&:hover {
 				border: 1px solid $white;
@@ -133,6 +126,7 @@
 // ------------------------------------------------------------
 .main {
 	margin-top: 80px;
+	margin-bottom: 138px;
 
 	@include mq(sp) {
 		margin-top: 70px;
