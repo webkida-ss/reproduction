@@ -1,3 +1,8 @@
 .hero{
-    background: url(../img/mainvisual.png);
+    &__inner{
+        padding-top: (599 / 1280) * 100%;
+        background: url(../img/mainvisual.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }

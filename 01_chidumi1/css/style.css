@@ -112,6 +112,11 @@ a
     background: #f2632d;
 }
 
+.main
+{
+    margin-top: 80px;
+}
+
 .header
 {
     position: fixed;
@@ -205,9 +210,13 @@ a
             transform: scale(1);
 }
 
-.hero
+.hero__inner
 {
+    padding-top: 46.79688%;
+
     background: url(../img/mainvisual.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 @media (max-width: 559px)
@@ -234,6 +243,10 @@ a
 
         width: 140px;
         height: 48px;
+    }
+    .main
+    {
+        margin-top: 70px;
     }
     .header__nav--list
     {
