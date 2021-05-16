@@ -20,6 +20,10 @@
         margin-top: 89px;
         display: flex;
         justify-content: center;
+        @include mq(sp) {
+            display: block;
+            margin-top: 26px;
+        }
     }
 
     &__item{
@@ -33,20 +37,38 @@
             opacity: .6;
         }
 
+        @include mq(sp) {
+            & + &{
+                margin: 47px 0 0 0;
+            }
+        }
+
         &--img{
             width: 280px;
             height: 200px;
             img{
                 height: 100%;
             }
+            @include mq(sp) {
+                margin: 0 auto;
+            }
         }
 
         &--title{
             margin-top: 29px;
+            font-size: 2.8rem;
+            font-weight: 600;
+            @include mq(sp) {
+                margin-top: 26px;
+            }
         }
 
         &--desc{
             margin-top: 28px;
+            @include mq(sp) {
+                margin-top: 15px;
+                font-size: 1.8rem;
+            }
         }
 
     }
