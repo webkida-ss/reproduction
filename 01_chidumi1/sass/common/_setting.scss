@@ -3,47 +3,39 @@
 // --------------------------------------------------
 
 // カラー(必要に応じて変更すること)
-$black: #333333;
-$gray: #afadad;
-$dark-gray: #3e3e3e;
+$dark-gray: #555555;
+$light-gray: #D5D5D5;
 $white: #ffffff;
-$red: #e81919;
-$red-active: #f1b4b4;
-$blue: #3f51b5;
+$orange: #F2632D;
 $blue-active: #aedaee;
 
 // ---
-$color-main: $blue; // ベース色
-$color-active: $red; // アクティブ色
+$color-main: $dark-gray; // ベース色
 $color-background-base: $white; // 背景色
-$color-text-base: $black; // テキスト色
+$color-text-base: $dark-gray; // テキスト色
 $hover-opacity: .6; // 透過度
+
+// ヘッダー高さ
+$header-height-pc: 60px;
+$header-height-sp: 88px;
+
+// 余白
+$padding-pc: 150px;
+$padding-sp: 15px;
 
 // レイアウト幅
 $layout-width-canvas-pc: 1280px;
-$layout-width-inner-pc: 1200px;
+$layout-width-inner-pc: $layout-width-canvas-pc - ($padding-pc * 2);
 $layout-width-canvas-sp: 375px;
-$layout-width-inner-sp: 343px;
+$layout-width-inner-sp: $layout-width-canvas-sp - ($padding-sp * 2);;
 
 // 階層
 $layer: (
 	modal: 100, // モダール
-	drawer: 40, // ドロワー
-	drawer-bg: 39, // ドロワーバックグラウンド
-	floating: 30, // フローティングアイテム
 	header: 20, // ヘッダー
-	footer: 10, // フッター
+	footer: 10, // フッター 
 	default: 1,
 );
-
-// 余白
-$padding-pc: 24px;
-$padding-tab: 24px;
-$padding-sp: 16px;
-
-// ヘッダー高さ
-$header-height-pc: 100px;
-$header-height-sp: 60px;
 
 // フォントインポート
 
@@ -52,11 +44,11 @@ $header-height-sp: 60px;
 // https://saruwakakun.com/html-css/basic/font-family-how-to
 // $font-family-default: "游ゴシック体", "Yu Gothic", yugothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", meiryo, "MS Pゴシック", "MS PGothic", sans-serif; // 標準フォント
 // ---------------------------------------------------------------------------
-$font-family-default: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
+$font-family-default: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN','Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
 $font-family-english: sans-serif;
 $font-family-base: $font-family-default;
-$font-size-base: 1.6rem;
-$font-weight-base: 400;
+$font-size-base: 2rem;
+$font-weight-base: 300;
 $line-height-base: 1.6;
 
 // ブレイクポイント 
