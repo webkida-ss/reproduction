@@ -9,9 +9,10 @@
 		height: 40px;
 	}
 
-	&__copyright{
+	&__copyright {
 		height: 100%;
 		line-height: 50px;
+
 		@include mq(sp) {
 			line-height: 40px;
 		}

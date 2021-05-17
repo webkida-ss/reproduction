@@ -1,13 +1,13 @@
-.hero{
-    &__inner{
-        padding-top: (599 / 1280) * 100%;
-        background: url(../img/mainvisual.png);
-        background-size: cover;
-        background-repeat: no-repeat;
+.hero {
+	&__inner {
+		padding-top: (599 / 1280) * 100%;
+		background: url(../img/mainvisual.png);
+		background-size: cover;
+		background-repeat: no-repeat;
 
-        @include mq(sp) {
-            padding-top: (360px / $layout-width-canvas-sp) * 100%;
-            background-position: center top 30%;
-        }
-    }
+		@include mq(sp) {
+			padding-top: (360px / $layout-width-canvas-sp) * 100%;
+			background-position: center top 30%;
+		}
+	}
 }

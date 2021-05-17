@@ -1,95 +1,98 @@
-.menu{
-    // margin-top: *px;
+.menu {
+	// margin-top: *px;
 
-    &__inner{
-        // width:(*px/$layout-pc-width-canvas) * 100%;
-        // padding: 0 *px 0 *px;
-        @include mq(sp) {
-            // width:(*px/$layout-pc-width-canvas) * 100%;
-            // padding: 0 *px 0 *px;
-        }
-    }
+	&__inner {
+		// width:(*px/$layout-pc-width-canvas) * 100%;
+		// padding: 0 *px 0 *px;
+		@include mq(sp) {
+			// width:(*px/$layout-pc-width-canvas) * 100%;
+			// padding: 0 *px 0 *px;
+		}
+	}
 
-    &__title{
-        font-size: 2.8rem;
-        font-weight: 600;
-    }
+	&__title {
+		font-weight: 600;
+		font-size: 2.8rem;
+	}
 
-    &__list{
-        
-        margin-top: 95px;
-        display: flex;
-        justify-content: center;
-        @include mq(sp) {
-            display: block;
-            margin-top: 26px;
-        }
-    }
+	&__list {
+		display: flex;
+		justify-content: center;
+		margin-top: 95px;
 
-    &__item{
-        cursor: pointer;
-        line-height: 1;
-        text-align: center;
-        @include mq(pc) {
-            & + & {
-                margin-left: 39px;
-            }
-        }
-        &:hover{
-            opacity: .6;
-        }
-        @include mq(tab-only) {
-            width: 30%;
-            margin: auto;
-        }
-        @include mq(sp) {
-            & + &{
-                margin: 47px 0 0 0;
-            }
-        }
+		@include mq(sp) {
+			display: block;
+			margin-top: 26px;
+		}
+	}
 
-        &--img{
-            width: 280px;
-            height: 200px;
-            img{
-                height: 100%;
-                @include mq(tab-only) {
-                    height: auto;
-                }    
-            }
-            @include mq(tab-only) {
-                width: 100%;
-                height: auto;
-            }
-            
-            @include mq(sp) {
-                margin: 0 auto;
-            }
-        }
+	&__item {
+		line-height: 1;
+		text-align: center;
+		cursor: pointer;
 
-        &--title{
-            margin-top: 29px;
-            font-size: 2.8rem;
-            font-weight: 600;
-            @include mq(tab-only) {
-                margin-top: 20px;
-                font-size: 2.4rem;
-            }
-            @include mq(sp) {
-                margin-top: 28px;
-            }
-        }
+		@include mq(pc) {
+			& + & {
+				margin-left: 39px;
+			}
+		}
+		@include mq(tab-only) {
+			width: 30%;
+			margin: auto;
+		}
+		@include mq(sp) {
+			& + & {
+				margin: 47px 0 0 0;
+			}
+		}
+		&:hover {
+			opacity: .6;
+		}
 
-        &--desc{
-            margin-top: 28px;
-            @include mq(tab-only) {
-                margin-top: 20px;
-            }
-            @include mq(sp) {
-                margin-top: 10px;
-                font-size: 1.6rem;
-                
-            }
-        }
-    }
+		&--img {
+			width: 280px;
+			height: 200px;
+
+			@include mq(tab-only) {
+				width: 100%;
+				height: auto;
+			}
+			@include mq(sp) {
+				margin: 0 auto;
+			}
+			img {
+				height: 100%;
+
+				@include mq(tab-only) {
+					height: auto;
+				}
+			}
+		}
+
+		&--title {
+			margin-top: 29px;
+			font-weight: 600;
+			font-size: 2.8rem;
+
+			@include mq(tab-only) {
+				margin-top: 20px;
+				font-size: 2.4rem;
+			}
+			@include mq(sp) {
+				margin-top: 28px;
+			}
+		}
+
+		&--desc {
+			margin-top: 28px;
+
+			@include mq(tab-only) {
+				margin-top: 20px;
+			}
+			@include mq(sp) {
+				margin-top: 10px;
+				font-size: 1.6rem;
+			}
+		}
+	}
 }

@@ -438,13 +438,13 @@ a
     {
         margin: 18px auto auto;
     }
-    .header__nav--item + .header__nav--item
-    {
-        margin-left: 37px;
-    }
     .header__nav--item
     {
         font-size: 1.6rem;
+    }
+    .header__nav--item + .header__nav--item
+    {
+        margin-left: 37px;
     }
     .footer
     {
@@ -526,13 +526,13 @@ a
         width: 30%;
         margin: auto;
     }
-    .menu__item--img img
-    {
-        height: auto;
-    }
     .menu__item--img
     {
         width: 100%;
+        height: auto;
+    }
+    .menu__item--img img
+    {
         height: auto;
     }
     .menu__item--title

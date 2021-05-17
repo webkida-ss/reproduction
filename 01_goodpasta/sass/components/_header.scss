@@ -16,6 +16,7 @@
 	}
 	&__title {
 		height: 45px;
+
 		@include mq(tab-only) {
 			width: 40%;
 			height: auto;
@@ -36,9 +37,10 @@
 	&__inner {
 		display: flex;
 		align-items: center;
+
 		@include mq(sp) {
+			flex-direction: column;
 			padding-top: 8px;
-			flex-direction: column;			
 		}
 	}
 
@@ -60,14 +62,16 @@
 		&--item {
 			font-weight: 600;
 			font-size: 1.8rem;
+
+			@include mq(sp) {
+				font-size: 1.6rem;
+			}
 			& + & {
 				margin-left: 36px;
+
 				@include mq(sp) {
 					margin-left: 37px;
 				}
-			}
-			@include mq(sp) {
-				font-size: 1.6rem;
 			}
 		}
 		&--link {
