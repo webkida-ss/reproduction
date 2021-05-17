@@ -66,6 +66,8 @@ a
 
 .section__title
 {
+    line-height: 1;
+
     width: 100%;
     padding-bottom: 16px;
 
@@ -91,7 +93,7 @@ a
 .section__title h2::after
 {
     position: absolute;
-    bottom: -16px;
+    bottom: -21px;
     left: 0;
 
     display: block;
@@ -116,7 +118,7 @@ a
 {
     font-size: 1.8rem;
     font-weight: bold;
-    line-height: 48px;
+    line-height: 42px;
 
     width: 140px;
     height: 48px;
@@ -136,8 +138,8 @@ a
             transition: all .5s ease 0s;
 
     color: #f2632d;
-    border: 1px solid #f2632d;
-    border-radius: 15px;
+    border: 3px solid #f2632d;
+    border-radius: 30px;
 }
 
 .util__link a:hover
@@ -149,8 +151,8 @@ a
 
 .main
 {
-    margin-top: 80px;
-    margin-bottom: 138px;
+    margin-top: 78px;
+    margin-bottom: 140px;
 }
 
 .header
@@ -196,6 +198,8 @@ a
 
 .header__nav
 {
+    line-height: 1;
+
     margin-left: auto;
 }
 
@@ -210,9 +214,15 @@ a
     align-items: center;
 }
 
+.header__nav--item
+{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
 .header__nav--item + .header__nav--item
 {
-    margin-left: 32px;
+    margin-left: 36px;
 }
 
 .header__nav--link
@@ -250,7 +260,7 @@ a
 {
     font-size: 1.2rem;
 
-    height: 50px;
+    height: 45px;
 
     text-align: center;
 
@@ -286,7 +296,7 @@ a
     display: -ms-flexbox;
     display: flex;
 
-    margin-top: 89px;
+    margin-top: 95px;
 
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -341,29 +351,36 @@ a
     display: -ms-flexbox;
     display: flex;
 
-    margin-top: 29px;
+    margin-top: 42px;
 
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
+.about__content
+{
+    padding-top: 30px;
+}
+
 .about__content--title
 {
     font-size: 3.2rem;
     font-weight: 600;
+    line-height: 1.7;
 }
 
 .about__content--text
 {
     font-size: 2.2rem;
+    line-height: 1.7;
 
-    margin-top: 29px;
+    margin-top: 12px;
 }
 
 .about__link
 {
-    margin: 35px auto 0 0;
+    margin: 28px auto 0 0;
 }
 
 .about__img img

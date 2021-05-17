@@ -1,72 +1,80 @@
-.about{
-    margin-top: 120px;
+.about {
+	margin-top: 120px;
 
-    @include mq(tab) {
-        margin-top: 100px;
-    }
+	@include mq(tab) {
+		margin-top: 100px;
+	}
 
-    &__inner{
-        margin-top: 29px;
-        display: flex;
-        justify-content: space-between;
-        @include mq(tab) {
-            display: block;
-        }
-    }
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 42px;
 
-    &__title{
-        // 
-    }
+		@include mq(tab) {
+			display: block;
+		}
+	}
 
-    &__content{
-        @include mq(tab) {
-            text-align: center;
-        }
-        &--title{
-            font-weight: 600;
-            font-size: 3.2rem;
-            @include mq(tab-only) {
-                margin-top: 20px;
-                font-size: 2.8rem;
-            }
-            @include mq(sp) {
-                margin-top: 40px;
-                font-size: 2.6rem;
-            }
-        }
-        &--text{
-            margin-top: 29px;
-            font-size: 2.2rem;
-            @include mq(tab-only) {
-                margin-top: 20px;
-                font-size: 1.8rem; 
-            }
-            @include mq(sp) {
-                margin-top: 19px;
-                font-size: 1.6rem;
-            }
-        }   
-    }
+	&__title {
+		// 
+	}
 
-    &__link{
-        margin: 35px auto 0 0;
-        @include mq(tab) {
-            margin: 20px auto 0;
-        }
-    }
+	&__content {
+		padding-top: 30px;
+
+		@include mq(tab) {
+			text-align: center;
+		}
+		&--title {
+			font-weight: 600;
+			font-size: 3.2rem;
+			line-height: 1.7;
+
+			@include mq(tab-only) {
+				margin-top: 20px;
+				font-size: 2.8rem;
+			}
+			@include mq(sp) {
+				margin-top: 40px;
+				font-size: 2.6rem;
+			}
+		}
+		&--text {
+			margin-top: 12px;
+			font-size: 2.2rem;
+			line-height: 1.7;
+
+			@include mq(tab-only) {
+				margin-top: 20px;
+				font-size: 1.8rem;
+			}
+			@include mq(sp) {
+				margin-top: 19px;
+				font-size: 1.6rem;
+			}
+		}
+	}
+
+	&__link {
+		margin: 28px auto 0 0;
+
+		@include mq(tab) {
+			margin: 20px auto 0;
+		}
+	}
 
 
-    &__img{
-        // width: 450px;
-        // height: 300px;
-        img{
-            width: 100%;
-        }
-        @include mq(tab-only) {
-            margin-top: 20px;
-        }
-        @include mq(sp) {
-            margin-top: 50px;
-        }
-    }
+	&__img {
+		@include mq(tab-only) {
+			margin-top: 20px;
+		}
+		@include mq(sp) {
+			margin-top: 50px;
+		}
+		// width: 450px;
+		// height: 300px;
+		img {
+			width: 100%;
+		}
+	}
 }

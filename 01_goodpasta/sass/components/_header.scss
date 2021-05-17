@@ -42,6 +42,7 @@
 	// ------------------------------------------------------------
 	&__nav {
 		margin-left: auto;
+		line-height: 1;
 
 		@include mq(sp) {
 			margin: auto;
@@ -52,9 +53,10 @@
 			align-items: center;// 上下中央揃え
 		}
 		&--item {
-
+			font-weight: 600;
+			font-size: 1.8rem;
 			& + & {
-				margin-left: 32px;
+				margin-left: 36px;
 				@include mq(sp) {
 					margin-left: 37px;
 				}
