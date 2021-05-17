@@ -76,7 +76,7 @@
                 font-size: 2.4rem;
             }
             @include mq(sp) {
-                margin-top: 26px;
+                margin-top: 28px;
             }
         }
 
@@ -86,8 +86,9 @@
                 margin-top: 20px;
             }
             @include mq(sp) {
-                margin-top: 15px;
-                font-size: 1.8rem;
+                margin-top: 10px;
+                font-size: 1.6rem;
+                
             }
         }
     }

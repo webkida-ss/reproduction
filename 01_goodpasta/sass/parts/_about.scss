@@ -13,6 +13,9 @@
 		@include mq(tab) {
 			display: block;
 		}
+		@include mq(sp) {
+			margin-top: -10px;
+		}
 	}
 
 	&__title {
@@ -24,6 +27,9 @@
 
 		@include mq(tab) {
 			text-align: center;
+		}
+		@include mq(sp) {
+			padding-top: 0;
 		}
 		&--title {
 			font-weight: 600;
@@ -49,7 +55,7 @@
 				font-size: 1.8rem;
 			}
 			@include mq(sp) {
-				margin-top: 19px;
+				margin-top: 7px;
 				font-size: 1.6rem;
 			}
 		}
@@ -59,7 +65,7 @@
 		margin: 28px auto 0 0;
 
 		@include mq(tab) {
-			margin: 20px auto 0;
+			margin: 15px auto 0;
 		}
 	}
 

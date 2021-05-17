@@ -20,6 +20,10 @@
 			width: 40%;
 			height: auto;
 		}
+		@include mq(sp) {
+			width: 50%;
+			height: auto;
+		}
 		a {
 			display: block;
 			height: inherit;
@@ -33,6 +37,7 @@
 		display: flex;
 		align-items: center;
 		@include mq(sp) {
+			padding-top: 8px;
 			flex-direction: column;			
 		}
 	}
@@ -45,7 +50,7 @@
 		line-height: 1;
 
 		@include mq(sp) {
-			margin: auto;
+			margin: 18px auto auto;
 		}
 
 		&--list {
@@ -60,6 +65,9 @@
 				@include mq(sp) {
 					margin-left: 37px;
 				}
+			}
+			@include mq(sp) {
+				font-size: 1.6rem;
 			}
 		}
 		&--link {

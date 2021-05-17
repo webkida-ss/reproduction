@@ -24,7 +24,7 @@
 			text-align: center;
 	
 			@include mq(sp) {
-				// font-size: *rem;
+				font-size: 3rem;
 			}
 	
 			&::after {

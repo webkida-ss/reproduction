@@ -7,7 +7,7 @@
 
         @include mq(sp) {
             padding-top: (360px / $layout-width-canvas-sp) * 100%;
-            background-position: center;
+            background-position: center top 30%;
         }
     }
 }
