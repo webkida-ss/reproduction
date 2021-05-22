@@ -17,6 +17,9 @@
 			width: inherit;
 			height: inherit;
 		}
+		&:hover{
+			opacity: .6;
+		}
 	}
 
 	&__inner {

@@ -36,7 +36,10 @@
         }
     }
     &__img{
-    // 
+        &:hover{
+            opacity: .6;
+            cursor: pointer;
+        }
     }
     &__text{
         margin-top: 32px;

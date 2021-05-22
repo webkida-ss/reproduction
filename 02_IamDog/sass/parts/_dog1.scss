@@ -53,6 +53,10 @@
             width: 100%;
             height: inherit;
         }
+        &:hover{
+            opacity: .6;
+            cursor: pointer;
+        }
     }
 
     &__context{

@@ -148,6 +148,10 @@ a {
 	height: inherit;
 }
 
+.header__logo:hover {
+	opacity: .6;
+}
+
 .header__inner {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -415,6 +419,11 @@ a {
 	height: inherit;
 }
 
+.dog1__img:hover {
+	opacity: .6;
+	cursor: pointer;
+}
+
 .dog1__context {
 	width: 46.93878%;
 }
@@ -458,6 +467,11 @@ a {
 
 .dog2__item {
 	width: 30.61224%;
+}
+
+.dog2__img:hover {
+	opacity: .6;
+	cursor: pointer;
 }
 
 .dog2__text {
@@ -531,6 +545,11 @@ a {
 	border-top: 1px solid #797979;
 }
 
+.dog3__item:hover {
+	background: #f9f9f9;
+	cursor: pointer;
+}
+
 .dog3__date {
 	position: relative;
 	padding-right: 140px;
@@ -584,6 +603,9 @@ a {
 	}
 	.header__drawer {
 		display: block;
+	}
+	.footer__inner {
+		padding-bottom: 36px;
 	}
 	.footer__list {
 		display: block;
