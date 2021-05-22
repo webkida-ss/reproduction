@@ -1,26 +1,32 @@
-.desc1{
-    // margin-top: *px;
-
-    &__inner{
-        // width:(*px/$layout-pc-width-canvas) * 100%;
-        // padding: 0 *px 0 *px;
-        @include mq(sp) {
-            // width:(*px/$layout-pc-width-canvas) * 100%;
-            // padding: 0 *px 0 *px;
-        }
+.desc1 {
+	padding: 100px 0;
+    @include mq(sp) {
+        padding: 100px 0 60px;
     }
 
-    &__title{
-        
-    }
-    &__para1{
-    
-    }
-    &__para2{
-    
-    }
-    &__para1{
-    
-    }
-    
+
+	&__inner {
+		text-align: center;
+
+		@include mq(sp) {
+		}
+	}
+
+	&__title {
+		font-weight: $font-weight-bold;
+		font-size: 3.2rem;
+
+		@include mq(sp) {
+			font-size: 2.0rem;
+		}
+	}
+	&__para {
+		margin-top: 50px;
+		font-size: 2.0rem;
+
+		@include mq(sp) {
+			margin-top: 42px;
+			font-size: 1.4rem;
+		}
+	}
 }

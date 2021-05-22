@@ -1,15 +1,25 @@
-.head{
-    // margin-top: *px;
+.hero {
+	&__inner {
+		position: relative;
+		padding-top: (605px / $layout-width-canvas-pc) * 100%;
+		background-image: url(../img/mainvisual.png);
+		background-size: cover;
+		background-repeat: no-repeat;
 
-    &__inner{
-        // width:(*px/$layout-pc-width-canvas) * 100%;
-        // padding: 0 *px 0 *px;
-        @include mq(sp) {
-            // width:(*px/$layout-pc-width-canvas) * 100%;
-            // padding: 0 *px 0 *px;
-        }
-    }
-    &__logo{
-        
-    }
+		@include mq(sp) {
+			padding-top: (513px / $layout-width-canvas-sp) * 100%;
+		}
+	}
+	&__logo {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 150px;
+		height: 139px;
+		img {
+			width: inherit;
+			height: inherit;
+		}
+	}
 }
