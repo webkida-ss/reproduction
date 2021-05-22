@@ -1,4 +1,56 @@
-.footer{
-    &__inner{
-    }
+.footer {
+	padding-top: 70px;
+	background: $gray;
+	color: $white;
+
+	&__inner {
+		padding-bottom: 82px;
+	}
+	&__list {
+		display: flex;
+		justify-content: space-between;
+
+		@include mq(sp) {
+			display: block;
+		}
+	}
+	&__item {
+		& + & {
+			@include mq(sp) {
+				margin-top: 52px;
+			}
+		}
+		dt {
+			font-weight: $font-weight-bold;
+
+			&::after {
+				display: block;
+				width: 100%;
+				content: '';
+
+				border-bottom: 1px solid $white;
+			}
+		}
+		dd {
+			margin-top: 28px;
+		}
+
+		li {
+			list-style: inside;
+			list-style-type: disc;
+		}
+	}
+
+	&__copyright {
+		height: 50px;
+		background: $dark-gray;
+		font-size: 1.2rem;
+		line-height: 50px;
+		text-align: center;
+
+		@include mq(sp) {
+			height: 36px;
+			line-height: 36px;
+		}
+	}
 }

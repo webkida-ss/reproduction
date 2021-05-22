@@ -1,20 +1,93 @@
-.dog3{
-    // padding: 96px 0 99px;
+.dog3 {
+	padding: 107px 0 100px;
 
-    &__inner{
-        // width:(*px/$layout-width-canvas-pc) * 100%;
-        // padding: 0 *px 0 *px;
-        @include mq(tab-only) {
-            // width:(*px / $layout-width-canvas-tab) * 100%;
-            // padding: 0 *px 0 *px;
-        }
-        @include mq(sp) {
-            // width:(*px/$layout-width-canvas-sp) * 100%;
-            // padding: 0 *px 0 *px;
-        }
-    }
+	&__inner {
+		// width:(*px/$layout-width-canvas-pc) * 100%;
+		// padding: 0 *px 0 *px;
+		@include mq(tab-only) {
+			// width:(*px / $layout-width-canvas-tab) * 100%;
+			// padding: 0 *px 0 *px;
+		}
+		@include mq(sp) {
+			// width:(*px/$layout-width-canvas-sp) * 100%;
+			// padding: 0 *px 0 *px;
+		}
+	}
 
-    &__title{
-        // 
-    }
+	&__list {
+		margin-top: 74px;
+	}
+	&__item {
+		display: inline-flex;
+		align-items: center;
+		position: relative;
+		width: 100%;
+		padding: 8px 0;
+		// height: 40px;
+
+		$dog3-border: 1px solid $dark-gray;
+		@include mq(sp) {
+			display: block;
+		}
+		// 1つめだけ上線あり
+		&:nth-child(1) {
+			&::before {
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				content: '';
+
+				border-top: $dog3-border;
+			}
+		}
+		&::after {
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			content: '';
+
+			border-top: $dog3-border;
+		}
+	}
+	&__date {
+		position: relative;
+		padding-right: 140px;// 疑似要素のスペース確保
+		font-weight: $font-weight-bold;
+
+		@include mq(sp) {
+			display: inline-block;
+			&::after {
+				right: 50px;
+			}
+		}
+		&::after {
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 36px;
+			width: 84px;
+			height: 26px;
+			border: 1px solid $red;
+			color: $red;
+			text-align: center;
+			content: '新着';
+		}
+	}
+	&__text {
+		@include mq(sp) {
+			margin-top: 15px;
+			font-size: 1.4rem;
+		}
+	}
+	&__link {
+		margin-top: 40px;
+
+		@include mq(sp) {
+			margin-top: 31px;
+		}
+	}
 }
