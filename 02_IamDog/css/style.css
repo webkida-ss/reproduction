@@ -141,6 +141,9 @@ a {
 .header__logo {
 	width: 105px;
 	height: 36px;
+	        transition: opacity .5s ease 0s;
+
+	-webkit-transition: opacity .5s ease 0s;
 }
 
 .header__logo img {
@@ -412,6 +415,9 @@ a {
 .dog1__img {
 	width: 450px;
 	height: 278px;
+	        transition: opacity .5s ease 0s;
+
+	-webkit-transition: opacity .5s ease 0s;
 }
 
 .dog1__img img {
@@ -469,9 +475,22 @@ a {
 	width: 30.61224%;
 }
 
-.dog2__img:hover {
+.dog2__img {
+	overflow: hidden;
+}
+
+.dog2__img img {
+	        transition: all .6s;
+
+	-webkit-transition: all .6s;
+}
+
+.dog2__img img:hover {
 	opacity: .6;
+	        transform: scale(1.05);
 	cursor: pointer;
+
+	-webkit-transform: scale(1.05);
 }
 
 .dog2__text {
@@ -518,9 +537,11 @@ a {
 	position: relative;
 	width: 100%;
 	padding: 8px 0;
+	        transition: all .5s ease 0s;
 
 	-webkit-box-align: center;
 	-ms-flex-align: center;
+	-webkit-transition: all .5s ease 0s;
 }
 
 .dog3__item:nth-child(1)::before {
@@ -546,7 +567,7 @@ a {
 }
 
 .dog3__item:hover {
-	background: #f9f9f9;
+	background: #afafaf;
 	cursor: pointer;
 }
 
@@ -633,11 +654,11 @@ a {
 	.dog1__list {
 		margin-top: 77px;
 	}
-	.dog1__item + .dog1__item {
-		margin-top: 72px;
-	}
 	.dog1__item {
 		display: block;
+	}
+	.dog1__item + .dog1__item {
+		margin-top: 72px;
 	}
 	.dog1__context {
 		width: 100%;

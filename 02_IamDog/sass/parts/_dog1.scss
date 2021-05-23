@@ -1,101 +1,98 @@
-.dog1{
-    padding: 96px 0 99px;
-    background: $light-gray;
+.dog1 {
+	padding: 96px 0 99px;
+	background: $light-gray;
 
-    &__inner{
-        // width:(*px/$layout-width-canvas-pc) * 100%;
-        // padding: 0 *px 0 *px;
-        @include mq(tab-only) {
-            // width:(*px / $layout-width-canvas-tab) * 100%;
-            // padding: 0 *px 0 *px;
-        }
-        @include mq(sp) {
-            // width:(*px/$layout-width-canvas-sp) * 100%;
-            // padding: 0 *px 0 *px;
-        }
-    }
+	&__inner {
+		@include mq(tab-only) {
+			// width:(*px / $layout-width-canvas-tab) * 100%;
+			// padding: 0 *px 0 *px;
+		}
+		@include mq(sp) {
+			// width:(*px/$layout-width-canvas-sp) * 100%;
+			// padding: 0 *px 0 *px;
+		}
+	}
 
-    &__title{
-        // 
-    }
 
-    &__list{
-        margin-top: 87px;
-        @include mq(sp) {
-            margin-top: 77px;
-        }
-    }
-    &__item{
-        display: flex;
-        justify-content: space-between;
+	&__list {
+		margin-top: 87px;
 
-        & + & {
-            margin-top: 69px;
-            @include mq(sp) {
-                margin-top: 72px;
-            }
-        }
+		@include mq(sp) {
+			margin-top: 77px;
+		}
+	}
+	&__item {
+		display: flex;
+		justify-content: space-between;
 
-        // 2つめだけ反転
-        &:nth-child(2){
-            flex-direction: row-reverse;
-        }
+		@include mq(sp) {
+			display: block;
+		}
 
-        @include mq(sp) {
-            display: block;
-        }
-    }
-    
-    &__img{
-        width: 450px;
-        height: 278px;
-        img{
-            width: 100%;
-            height: inherit;
-        }
-        &:hover{
-            opacity: .6;
-            cursor: pointer;
-        }
-    }
+		& + & {
+			margin-top: 69px;
 
-    &__context{
-        width: (460px / $layout-width-inner-pc) * 100%;
-        @include mq(sp) {
-            width: 100%;
-        }
+			@include mq(sp) {
+				margin-top: 72px;
+			}
+		}
 
-        &--title{
-            position: relative;
-            font-size: 2.6rem;
-            font-weight: $font-weight-bold;
-            @include mq(sp) {
-                font-size: 2.0rem;
-            }
+		// 2つめだけ反転
+		&:nth-child(2) {
+			flex-direction: row-reverse;
+		}
+	}
 
-            &::after{
-                display: inline-block;
-                content: '';
-                position: absolute;
-                bottom: -3px;
-                left: 0;
-                width: 100%;
-                border-bottom: 3px solid $red;
-            }
-        }
+	&__img {
+		width: 450px;
+		height: 278px;
+		transition: opacity .5s ease 0s;
+		img {
+			width: 100%;
+			height: inherit;
+		}
+		&:hover {
+			opacity: .6;
+			cursor: pointer;
+		}
+	}
 
-        &--text{
-            font-size: 1.8rem;
-            margin-top: 30px;
-            @include mq(sp) {
-                font-size: 1.6rem;
-                margin-top: 18px;
-                    
-            }
-        }
-    }
+	&__context {
+		width: (460px / $layout-width-inner-pc) * 100%;
 
-    &__{
-        
-    }
+		@include mq(sp) {
+			width: 100%;
+		}
+
+		&--title {
+			position: relative;
+			font-weight: $font-weight-bold;
+			font-size: 2.6rem;
+
+			@include mq(sp) {
+				font-size: 2.0rem;
+			}
+
+			&::after {
+				display: inline-block;
+				position: absolute;
+				bottom: -3px;
+				left: 0;
+				width: 100%;
+				content: '';
+
+				border-bottom: 3px solid $red;
+			}
+		}
+
+		&--text {
+			margin-top: 30px;
+			font-size: 1.8rem;
+
+			@include mq(sp) {
+				margin-top: 18px;
+				font-size: 1.6rem;
+			}
+		}
+	}
 }

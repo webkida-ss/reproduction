@@ -1,8 +1,9 @@
 .desc1 {
 	padding: 100px 0;
-    @include mq(sp) {
-        padding: 100px 0 60px;
-    }
+
+	@include mq(sp) {
+		padding: 100px 0 60px;
+	}
 
 
 	&__inner {

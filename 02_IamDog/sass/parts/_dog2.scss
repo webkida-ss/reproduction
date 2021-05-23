@@ -1,50 +1,53 @@
-.dog2{
-    padding: 96px 0 89px;
+.dog2 {
+	padding: 96px 0 89px;
 
-    &__inner{
-        // width:(*px/$layout-width-canvas-pc) * 100%;
-        // padding: 0 *px 0 *px;
-        @include mq(tab-only) {
-            // width:(*px / $layout-width-canvas-tab) * 100%;
-            // padding: 0 *px 0 *px;
-        }
-        @include mq(sp) {
-            // width:(*px / $layout-width-canvas-sp) * 100%;
-            // padding: 0 *px 0 *px;
-        }
-    }
+	&__inner {
+		@include mq(tab-only) {
+			// width:(*px / $layout-width-canvas-tab) * 100%;
+			// padding: 0 *px 0 *px;
+		}
+		@include mq(sp) {
+			// width:(*px / $layout-width-canvas-sp) * 100%;
+			// padding: 0 *px 0 *px;
+		}
+	}
 
-    &__title{
-        // 
-    }
 
-    &__list{
-        margin-top: 62px;
-        display: flex;
-        justify-content: space-between;
-        @include mq(sp) {
-            display: block;
-            margin-top: 0px;
-        }
-    }
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 62px;
 
-    &__item{
-        width:(300px / $layout-width-inner-pc) * 100%;
-        @include mq(sp) {
-            margin: 50px auto 0;
-            width:(300px / $layout-width-inner-sp) * 100%;
-        }
-    }
-    &__img{
-        &:hover{
-            opacity: .6;
-            cursor: pointer;
-        }
-    }
-    &__text{
-        margin-top: 32px;
-        @include mq(sp) {
-            margin-top: 20px;
-        }
-    }
+		@include mq(sp) {
+			display: block;
+			margin-top: 0px;
+		}
+	}
+
+	&__item {
+		width: (300px / $layout-width-inner-pc) * 100%;
+
+		@include mq(sp) {
+			width: (300px / $layout-width-inner-sp) * 100%;
+			margin: 50px auto 0;
+		}
+	}
+	&__img {
+		overflow: hidden;// ホバー時に大きくするけどはみ出さん
+		img {
+			transition: all .6s;
+			&:hover {
+				opacity: .6;
+				transform: scale(1.05);
+				cursor: pointer;
+			}
+		}
+	}
+	&__text {
+		margin-top: 32px;
+
+		@include mq(sp) {
+			margin-top: 20px;
+		}
+	}
 }
