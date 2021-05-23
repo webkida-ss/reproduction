@@ -178,6 +178,9 @@ a
     display: block;
 
     height: inherit;
+
+    -webkit-transition: opacity .5s ease 0s;
+            transition: opacity .5s ease 0s;
 }
 
 .header__title a:hover
@@ -198,8 +201,6 @@ a
 
 .header__nav
 {
-    line-height: 1;
-
     margin-left: auto;
 }
 
@@ -308,11 +309,17 @@ a
     line-height: 1;
 
     cursor: pointer;
+    -webkit-transition: all .5s ease 0s;
+            transition: all .5s ease 0s;
     text-align: center;
 }
 
 .menu__item:hover
 {
+    cursor: pointer;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+
     opacity: .6;
 }
 
@@ -383,9 +390,22 @@ a
     margin: 28px auto 0 0;
 }
 
+.about__img
+{
+    -webkit-transition: opacity 1s ease 0s;
+            transition: opacity 1s ease 0s;
+}
+
 .about__img img
 {
     width: 100%;
+}
+
+.about__img:hover
+{
+    cursor: pointer;
+
+    opacity: .6;
 }
 
 @media (max-width: 559px)

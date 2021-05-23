@@ -28,6 +28,7 @@
 		a {
 			display: block;
 			height: inherit;
+			transition: opacity 0.5s ease 0s;
 			&:hover {
 				opacity: .6;
 			}
@@ -49,7 +50,7 @@
 	// ------------------------------------------------------------
 	&__nav {
 		margin-left: auto;
-		line-height: 1;
+		// line-height: 1;
 
 		@include mq(sp) {
 			margin: 18px auto auto;
