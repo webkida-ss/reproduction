@@ -1,5 +1,6 @@
 .desc2 {
 	&__inner {
+		position: relative;
 		padding-bottom: (431px / $layout-width-canvas-pc) * 100%;
 		background-image: url(../img/dog_bg_01.png);
 		background-position: center left 40%;
@@ -15,12 +16,19 @@
 	}
 
 	&__para {
+		position: absolute;
 		width: (500px / $layout-width-inner-pc) * 100%;
-		margin-left: auto;
+		left: 49%;
 		color: $white;
 		font-weight: $font-weight-bold;
 		font-size: 1.8rem;
-
+		line-height: 1.8;
+		&:nth-child(1) {
+			top: 24%;
+		}
+		&:nth-child(2) {
+			top: 52%;
+		}
 		@include mq(sp) {
 			width: 100%;
 			&:nth-child(1) {
@@ -29,12 +37,6 @@
 			&:nth-child(2) {
 				padding-top: 30px;
 			}
-		}
-		&:nth-child(1) {
-			padding-top: 111px;
-		}
-		&:nth-child(2) {
-			padding-top: 40px;
 		}
 	}
 }

@@ -40,8 +40,17 @@
 		}
 
 		li {
+			position: relative;
 			list-style: inside;
-			list-style-type: disc;
+			list-style-type: none;
+			padding: 0 23px 0 16px;
+			&::after{
+				position: absolute;
+				top: 0;
+				left: 0;
+				content: '・';
+				display: block;
+			}
 		}
 	}
 
