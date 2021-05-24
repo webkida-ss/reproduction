@@ -364,7 +364,7 @@ a {
 }
 
 .desc1 {
-	padding: 100px 0;
+	padding: 90px 0 87px;
 }
 
 .desc1__inner {
@@ -377,8 +377,22 @@ a {
 }
 
 .desc1__para {
-	margin-top: 50px;
 	font-size: 2.0rem;
+}
+
+.desc1__para:nth-of-type(1) {
+	margin-top: 35px;
+	line-height: 1.7;
+}
+
+.desc1__para:nth-of-type(2) {
+	margin-top: 30px;
+	line-height: 2.1;
+}
+
+.desc1__para:nth-of-type(3) {
+	margin-top: 30px;
+	line-height: 2.1;
 }
 
 .dog1 {
@@ -400,8 +414,12 @@ a {
 	-ms-flex-pack: justify;
 }
 
-.dog1__item + .dog1__item {
+.dog1__item:nth-child(1) + .dog1__item:nth-child(2) {
 	margin-top: 69px;
+}
+
+.dog1__item:nth-child(2) + .dog1__item:nth-child(3) {
+	margin-top: 120px;
 }
 
 .dog1__item:nth-child(2) {
@@ -410,6 +428,14 @@ a {
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: reverse;
 	-ms-flex-direction: row-reverse;
+}
+
+.dog1__item:nth-child(2) h3 {
+	margin-top: 33px;
+}
+
+.dog1__item:nth-child(3) h3 {
+	margin-top: 13px;
 }
 
 .dog1__img {
@@ -454,6 +480,7 @@ a {
 .dog1__context--text {
 	margin-top: 30px;
 	font-size: 1.8rem;
+	line-height: 1.7;
 }
 
 .dog2 {
@@ -494,7 +521,7 @@ a {
 }
 
 .dog2__text {
-	margin-top: 32px;
+	margin-top: 30px;
 }
 
 .desc2__inner {
@@ -657,7 +684,10 @@ a {
 	.dog1__item {
 		display: block;
 	}
-	.dog1__item + .dog1__item {
+	.dog1__item:nth-child(1) + .dog1__item:nth-child(2) {
+		margin-top: 72px;
+	}
+	.dog1__item:nth-child(2) + .dog1__item:nth-child(3) {
 		margin-top: 72px;
 	}
 	.dog1__context {

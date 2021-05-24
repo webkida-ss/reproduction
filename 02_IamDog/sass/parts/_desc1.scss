@@ -1,10 +1,9 @@
 .desc1 {
-	padding: 100px 0;
+	padding: 90px 0 87px;
 
 	@include mq(sp) {
 		padding: 100px 0 60px;
 	}
-
 
 	&__inner {
 		text-align: center;
@@ -22,9 +21,19 @@
 		}
 	}
 	&__para {
-		margin-top: 50px;
 		font-size: 2.0rem;
-
+		&:nth-of-type(1){
+			margin-top: 35px;
+			line-height: 1.7;
+		}
+		&:nth-of-type(2){
+			margin-top: 30px;
+			line-height: 2.1;
+		}
+		&:nth-of-type(3){
+			margin-top: 30px;
+			line-height: 2.1;
+		}
 		@include mq(sp) {
 			margin-top: 42px;
 			font-size: 1.4rem;
