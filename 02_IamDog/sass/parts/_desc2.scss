@@ -12,31 +12,36 @@
 			// padding: 0 *px 0 *px;
 		}
 		@include mq(sp) {
+			padding-bottom: (403px / $layout-width-canvas-sp) * 100%;
+			background-image: url(../img/sp/dog_bg_sp.png);
 		}
 	}
 
 	&__para {
 		position: absolute;
-		width: (500px / $layout-width-inner-pc) * 100%;
 		left: 49%;
+		width: (500px / $layout-width-inner-pc) * 100%;
 		color: $white;
 		font-weight: $font-weight-bold;
 		font-size: 1.8rem;
 		line-height: 1.8;
+
+		@include mq(sp) {
+			left: 4%;
+			width: 100%;
+			font-size: 1.6rem;
+			&:nth-child(1) {
+				top: 23%;
+			}
+			&:nth-child(2) {
+				top: 55%;
+			}
+		}
 		&:nth-child(1) {
 			top: 24%;
 		}
 		&:nth-child(2) {
 			top: 52%;
-		}
-		@include mq(sp) {
-			width: 100%;
-			&:nth-child(1) {
-				padding-top: 100px;
-			}
-			&:nth-child(2) {
-				padding-top: 30px;
-			}
 		}
 	}
 }

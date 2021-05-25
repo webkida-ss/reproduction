@@ -25,6 +25,10 @@
 		&:hover {
 			opacity: .6;
 		}
+		@include mq(sp) {
+			width: 73px;
+			height: 25px;
+		}
 	}
 
 	&__inner {

@@ -8,6 +8,7 @@
 
 		@include mq(sp) {
 			padding-top: (513px / $layout-width-canvas-sp) * 100%;
+			background-image: url(../img/sp/mainvisual-sp.png);
 		}
 	}
 	&__logo {

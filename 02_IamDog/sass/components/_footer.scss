@@ -2,7 +2,9 @@
 	padding-top: 70px;
 	background: $gray;
 	color: $white;
-
+	@include mq(sp) {
+		padding-top: 50px;
+	}
 	&__inner {
 		padding-bottom: 82px;
 
@@ -19,9 +21,12 @@
 		}
 	}
 	&__item {
+		@include mq(sp) {
+			font-size: 1.4rem;
+		}
 		& + & {
 			@include mq(sp) {
-				margin-top: 52px;
+				margin-top: 20px;
 			}
 		}
 		dt {
@@ -33,10 +38,16 @@
 				content: '';
 
 				border-bottom: 1px solid $white;
+				@include mq(sp) {
+					padding-bottom: 10px;
+				}
 			}
 		}
 		dd {
 			margin-top: 28px;
+			@include mq(sp) {
+				margin-top: 10px;
+			}
 		}
 
 		li {
@@ -44,6 +55,9 @@
 			list-style: inside;
 			list-style-type: none;
 			padding: 0 23px 0 16px;
+			@include mq(sp) {
+				padding: 3px 23px 3px 16px;
+			}
 			&::after{
 				position: absolute;
 				top: 0;
