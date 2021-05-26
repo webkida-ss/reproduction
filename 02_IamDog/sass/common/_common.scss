@@ -37,10 +37,40 @@
 	@include mq(sp) {
 		width: $layout-width-inner-sp;
 	}
+}	
+
+// ------------------------------------------------------------
+// 表示制御（表示）
+// ------------------------------------------------------------
+// PCだけ表示
+.display-only-pc {
+	@include mq(tab) {
+		display: none;
+	}
+}
+
+// タブレットだけ表示
+.display-only-tab {
+	@include mq(pc) {
+		display: none;
+	}
+	@include mq(sp) {
+		display: none;
+	}
+}
+
+// スマホだけ表示
+.display-only-sp {
+	@include mq(pc) {
+		display: none;
+	}
+	@include mq(tab-only) {
+		display: none;
+	}
 }
 
 // ------------------------------------------------------------
-// 表示制御
+// 表示制御（非表示）
 // ------------------------------------------------------------
 
 // PCだけ非表示

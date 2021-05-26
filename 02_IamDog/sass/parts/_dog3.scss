@@ -1,13 +1,10 @@
 .dog3 {
 	padding: 107px 0 100px;
+	@include mq(tab-only) {
+		padding: 80px 0 70px;
+	}
 	@include mq(sp) {
 		padding: 110px 0 80px;
-	}
-	&__inner {
-		@include mq(tab-only) {
-			// width:(*px / $layout-width-canvas-tab) * 100%;
-			// padding: 0 *px 0 *px;
-		}
 	}
 
 	&__list {
@@ -62,7 +59,9 @@
 		position: relative;
 		padding-right: 140px;// 疑似要素のスペース確保
 		font-weight: $font-weight-bold;
-
+		@include mq(tab-only) {
+			font-size: 1.4rem;
+		}
 		@include mq(sp) {
 			display: inline-block;
 			font-size: 1.4rem;
@@ -84,6 +83,9 @@
 		}
 	}
 	&__text {
+		@include mq(tab-only) {
+			font-size: 1.4rem;
+		}
 		@include mq(sp) {
 			margin-top: 15px;
 			font-size: 1.4rem;
@@ -91,7 +93,9 @@
 	}
 	&__link {
 		margin-top: 40px;
-
+		@include mq(tab-only) {
+			margin-top: 35px;
+		}
 		@include mq(sp) {
 			margin-top: 31px;
 		}

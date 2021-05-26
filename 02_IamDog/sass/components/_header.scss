@@ -18,6 +18,11 @@
 		width: 105px;
 		height: 36px;
 		transition: opacity .5s ease 0s;
+
+		@include mq(sp) {
+			width: 73px;
+			height: 25px;
+		}
 		img {
 			width: inherit;
 			height: inherit;
@@ -25,17 +30,13 @@
 		&:hover {
 			opacity: .6;
 		}
-		@include mq(sp) {
-			width: 73px;
-			height: 25px;
-		}
 	}
 
 	&__inner {
 		display: flex;
 		align-items: center;
+
 		@include mq(sp) {
-			
 		}
 	}
 
@@ -55,12 +56,15 @@
 			height: inherit;
 
 			@include mq(sp) {
-				
 			}
 		}
 		&--item {
 			font-weight: $font-weight-bold;
 			font-size: 1.8rem;
+
+			@include mq(sp) {
+				font-size: 1.4rem;
+			}
 			& + & {
 				margin-left: 30px;
 
@@ -70,9 +74,6 @@
 				@include mq(sp) {
 					margin-left: 12px;
 				}
-			}
-			@include mq(sp) {
-				font-size: 1.4rem;
 			}
 		}
 		&--link {
@@ -98,5 +99,4 @@
 			}
 		}
 	}
-
 }

@@ -1,6 +1,7 @@
 .dog1 {
 	padding: 96px 0 99px;
 	background: $light-gray;
+
 	@include mq(tab-only) {
 		padding: 80px 0 70px;
 	}
@@ -40,6 +41,7 @@
 			}
 			h3 {
 				margin-top: 33px;
+
 				@include mq(tab-only) {
 					margin-top: 0;
 				}
@@ -50,6 +52,7 @@
 		}
 		&:nth-child(3) {
 			margin-top: 120px;
+
 			@include mq(tab-only) {
 				margin-top: 69px;
 			}
@@ -87,6 +90,7 @@
 
 	&__context {
 		width: (460px / $layout-width-inner-pc) * 100%;
+
 		@include mq(tab-only) {
 			width: 58%;
 		}
@@ -98,6 +102,7 @@
 			position: relative;
 			font-weight: $font-weight-bold;
 			font-size: 2.6rem;
+
 			@include mq(tab-only) {
 				font-size: 2.0rem;
 			}
@@ -124,10 +129,11 @@
 			margin-top: 30px;
 			font-size: 1.8rem;
 			line-height: 1.7;
+
 			@include mq(tab-only) {
 				margin-top: 8px;
-				line-height: 1.6;
 				font-size: 1.6rem;
+				line-height: 1.6;
 			}
 			@include mq(sp) {
 				margin-top: 18px;

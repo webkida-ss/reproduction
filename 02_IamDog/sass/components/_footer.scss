@@ -2,12 +2,19 @@
 	padding-top: 70px;
 	background: $gray;
 	color: $white;
+
+	@include mq(tab-only) {
+		padding-top: 50px;
+	}
 	@include mq(sp) {
 		padding-top: 50px;
 	}
 	&__inner {
 		padding-bottom: 82px;
 
+		@include mq(tab-only) {
+			padding-bottom: 40px;
+		}
 		@include mq(sp) {
 			padding-bottom: 36px;
 		}
@@ -21,6 +28,10 @@
 		}
 	}
 	&__item {
+		@include mq(tab-only) {
+			width: 32%;
+			font-size: 1.4rem;
+		}
 		@include mq(sp) {
 			font-size: 1.4rem;
 		}
@@ -45,25 +56,27 @@
 		}
 		dd {
 			margin-top: 28px;
+
 			@include mq(sp) {
 				margin-top: 10px;
 			}
 		}
 
 		li {
-			position: relative;
 			list-style: inside;
 			list-style-type: none;
+			position: relative;
 			padding: 0 23px 0 16px;
+
 			@include mq(sp) {
 				padding: 3px 23px 3px 16px;
 			}
-			&::after{
+			&::after {
+				display: block;
 				position: absolute;
 				top: 0;
 				left: 0;
 				content: '・';
-				display: block;
 			}
 		}
 	}

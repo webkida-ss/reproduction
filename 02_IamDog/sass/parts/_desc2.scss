@@ -8,8 +8,7 @@
 		background-repeat: no-repeat;
 
 		@include mq(tab-only) {
-			// width:(*px / $layout-width-canvas-tab) * 100%;
-			// padding: 0 *px 0 *px;
+			padding-bottom: (500px / $layout-width-canvas-tab) * 100%;
 		}
 		@include mq(sp) {
 			padding-bottom: (403px / $layout-width-canvas-sp) * 100%;
@@ -25,7 +24,13 @@
 		font-weight: $font-weight-bold;
 		font-size: 1.8rem;
 		line-height: 1.8;
-
+		@include mq(tab-only) {
+			font-size: 1.6rem;
+			line-height: 1.6;
+			&:nth-child(2) {
+				top: 55%;
+			}
+		}
 		@include mq(sp) {
 			left: 4%;
 			width: 100%;
