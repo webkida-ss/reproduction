@@ -1,16 +1,11 @@
 .dog1 {
 	padding: 96px 0 99px;
 	background: $light-gray;
-
+	@include mq(tab-only) {
+		padding: 80px 0 70px;
+	}
 	@include mq(sp) {
 		padding: 70px 0 50px;
-	}
-
-	&__inner {
-		@include mq(tab-only) {
-			// width:(*px / $layout-width-canvas-tab) * 100%;
-			// padding: 0 *px 0 *px;
-		}
 	}
 
 	&__list {
@@ -45,7 +40,9 @@
 			}
 			h3 {
 				margin-top: 33px;
-
+				@include mq(tab-only) {
+					margin-top: 0;
+				}
 				@include mq(sp) {
 					margin-top: 12px;
 				}
@@ -53,7 +50,9 @@
 		}
 		&:nth-child(3) {
 			margin-top: 120px;
-
+			@include mq(tab-only) {
+				margin-top: 69px;
+			}
 			@include mq(sp) {
 				margin-top: 72px;
 			}
@@ -68,6 +67,10 @@
 		height: 278px;
 		transition: opacity .5s ease 0s;
 
+		@include mq(tab-only) {
+			width: 40%;
+			height: auto;
+		}
 		@include mq(sp) {
 			width: 100%;
 			height: auto;
@@ -84,7 +87,9 @@
 
 	&__context {
 		width: (460px / $layout-width-inner-pc) * 100%;
-
+		@include mq(tab-only) {
+			width: 58%;
+		}
 		@include mq(sp) {
 			width: 100%;
 		}
@@ -93,7 +98,9 @@
 			position: relative;
 			font-weight: $font-weight-bold;
 			font-size: 2.6rem;
-
+			@include mq(tab-only) {
+				font-size: 2.0rem;
+			}
 			@include mq(sp) {
 				font-size: 2.0rem;
 			}
@@ -117,11 +124,14 @@
 			margin-top: 30px;
 			font-size: 1.8rem;
 			line-height: 1.7;
-
+			@include mq(tab-only) {
+				margin-top: 8px;
+				line-height: 1.6;
+				font-size: 1.6rem;
+			}
 			@include mq(sp) {
 				margin-top: 18px;
 				font-size: 1.6rem;
-				// letter-spacing: 0.1px;
 			}
 		}
 	}
