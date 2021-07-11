@@ -15,19 +15,19 @@ $blue-active: #aedaee;
 // ---
 $color-background-base: $white; // 背景色
 $color-text-base: $black-text; // テキスト色
-$hover-opacity: .6; // 透過度
+$hover-opacity: .5; // 透過度
 
 // ヘッダー高さ
 $header-height-pc: 100px;
 $header-height-sp: 60px;
 
 // 余白
-$padding-pc: 40px;
-$padding-tab: 24px;
+$padding-pc: 170px;
+$padding-tab: 30px;
 $padding-sp: 15px;
 
 // レイアウト幅
-$layout-width-canvas-pc: 1280px;
+$layout-width-canvas-pc: 1440px;
 $layout-width-inner-pc: $layout-width-canvas-pc - ($padding-pc * 2);
 $layout-width-canvas-tab: 768px;
 $layout-width-inner-tab: $layout-width-canvas-tab - ($padding-tab * 2);
@@ -49,27 +49,22 @@ $layer: (
 $transition-change-time: 0.5s;
 
 // フォントインポート
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap');
 
 // ---------------------------------------------------------------------------
 // フォント
-// https://saruwakakun.com/html-css/basic/font-family-how-to
-// $font-family-default: "游ゴシック体", "Yu Gothic", yugothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", meiryo, "MS Pゴシック", "MS PGothic", sans-serif; // 標準フォント
 // ---------------------------------------------------------------------------
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap');
-$font-family-default: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
-$font-family-english: sans-serif;
+$font-family-default: "Yu Gothic","游ゴシック体",  yugothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", meiryo, "MS Pゴシック", "MS PGothic", sans-serif; // 標準フォント
+$font-family-english: 'Montserrat',sans-serif;
 $font-family-base: $font-family-default;
 $font-weight-base: 400;
+$font-weight-medium: 500;
 $font-weight-bold: 600;
+$font-weight-extrabold: 800;
 $line-height-base: 1;// 基本設定
 $line-height-pra-base: 1.6;// 文章の場合の基本設定
 // フォントサイズ
-$font-size-max: 3.4rem;
-$font-size-large: 2.2rem;
-$font-size-medium: 1.8rem;
 $font-size-base: 1.6rem; // 基準サイズ
-$font-size-small: 1.4rem;
-$font-size-min: 1.2rem;
 
 // ブレイクポイント
 $max-width-sp: 559;
