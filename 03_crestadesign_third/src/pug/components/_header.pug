@@ -1,12 +1,14 @@
 header.header
 	.inner.header__inner 
-		h2.heaer__title セクションタイトル
+		h2.heaer__title 
+			img(src="./img/site-logo.png" alt="ロゴ")
 
 		// ドロワーメニュー
 		.header__drawer.for-drawer#js-drawer(data-target="for-drawer")
 			.header__drawer--bars
 				- for (var x = 0; x < 3; x++)
 					.header__drawer--bar
+			.header__drawer--text menu
 
 		// ドロワー背景
 		.header__drawer-bg.for-drawer
