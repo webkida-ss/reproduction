@@ -34,7 +34,8 @@ $home-top-linear-width-pc: (780px / $layout-width-canvas-pc) * 100%;
 
 	&__message {
 		&--sub {
-			font-weight: $font-weight-medium;
+			font-weight: $font-weight-bold;
+            font-size: 2rem;
 			span {
 				font-family: $font-family-english;
 			}
