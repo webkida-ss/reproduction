@@ -1,15 +1,12 @@
 .header {
-	// ------------------------------------------------------------
-	// 固定する場合はfixかつ、bodyにpadding-topついてるかチェック
-	// ------------------------------------------------------------
+	color: $white;
 	position: fixed;// ヘッダー位置固定
 	top: 0;
 	left: 0;
 	z-index: map-get($layer,header);
 	width: 100%;
 	height: $header-height-pc;
-	// padding: *px 0;
-
+	
 	@include mq(sp) {
 		height: $header-height-sp;
 	}
