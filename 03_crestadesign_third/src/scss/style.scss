@@ -11,8 +11,13 @@
 // components
 @import 'components/_header';// ヘッダー
 
-// parts
-@import 'parts/_';// 
+// home
+@import 'parts/home/_home-top';// 
+@import 'parts/home/_home-about-us';// 
+@import 'parts/home/_home-latest-topics';// 
+@import 'parts/home/_home-contact';// 
+
+
 @import 'parts/_access';// アクセス
 @import 'parts/_contact';// お問い合わせ
 

@@ -1,0 +1,48 @@
+$black-bg-top: #222222;
+$home-top-linear-width-pc: (780px / $layout-width-canvas-pc) * 100%;;
+.home-top{
+    position: relative; 
+    height: 740px;
+    background: linear-gradient(
+        to left, $black-bg-top 0 , $black-bg-top $home-top-linear-width-pc 
+        ,transparent $home-top-linear-width-pc,transparent 100%);
+        
+    &__bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: ($layout-width-inner-pc / $layout-width-canvas-pc) * 100%;
+        height: 640px;
+        background-image: url(../img/home/kv-img.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &__inner{
+        color: $white;
+        position: absolute;
+        top: 161px;
+        right: 194px;
+        @include mq(tab-only) {
+            // 
+        }
+
+        @include mq(sp) {
+            // 
+        }
+    }
+
+    &__message{
+        &--sub{
+            font-weight: $font-weight-medium; 
+            span{
+                font-family: $font-family-english;
+            }
+        }
+        &--main{
+            font-weight: $font-weight-extrabold; 
+            font-family: $font-family-english;
+            font-size: 7.2rem;
+        }
+    }
+}
