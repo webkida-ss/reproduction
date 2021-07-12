@@ -3,14 +3,11 @@
 // ------------------------------------------------------------
 .section {
 	&__title {
-		font-weight: $font-weight-bold;
-		// font-size: *rem;
-		// line-height: 1;
+		font-weight: $font-weight-extrabold;
+		font-size: 3.2rem;
 		font-family: $font-family-english;// 英語の場合
-		text-align: center;
-
-		@include mq(sp) {
-			// font-size: *rem;
+		@include mq(sp) { 
+			font-size: 2.8rem;
 		}
 	}
 }
@@ -103,28 +100,18 @@
 // util
 // ------------------------------------------------------------
 .util {
-	$util-link-width-pc: 100px;
-	$util-link-height-pc: 50px;
-	$util-link-width-sp: $util-link-width-pc;
-	$util-link-height-sp: $util-link-height-pc;
+	$util-link-width-pc: 160px;
+	$util-link-height-pc: 36px;
 	$util-link-border-size: 3px;
 
 	// 共通リンクボタン
 	&__link {
 		width: $util-link-width-pc;
 		height: $util-link-height-pc;
-		margin: 0 auto;
 		font-weight: $font-weight-bold;
-		// font-size: *rem;
+		font-size: 1.2rem;
 		line-height: getLineHeightForBox($util-link-height-pc, $util-link-border-size);
 		text-align: center;
-
-		@include mq(sp) {
-			width: $util-link-width-sp;
-			height: $util-link-height-sp;
-			// font-size: *rem;
-			line-height: getLineHeightForBox($util-link-height-sp, $util-link-border-size);
-		}
 
 		a {
 			display: block;
@@ -133,12 +120,13 @@
 			border-width: $util-link-border-size;
 			border-style: solid;
 			border-color: $black-bg;
+			background: $black-bg;
+			color: $white;
 			transition: all $transition-change-time ease 0s;
 			&:hover {
-				border-color: $white;
-				background: $black-bg;
-				color: $white;
-			}
+				background: $white;
+				color: $black-text;
+				}
 		}
 	}
 
@@ -158,20 +146,9 @@
 	// display: flex;
 }
 
-$sidebar-width-pc: 200px;
-$sidebar-width-tab: 150px;
-$sidebar-width-sp: 100px;
-
 // ------------------------------------------------------------
 // main
 // ------------------------------------------------------------
 .main {
 	// width: getMinus100Percent($sidebar-width-pc);
-}
-
-// ------------------------------------------------------------
-// sidebar
-// ------------------------------------------------------------
-.sidebar {
-	// 
 }
