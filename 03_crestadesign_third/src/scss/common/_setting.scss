@@ -4,7 +4,6 @@
 
 // カラー(必要に応じて変更すること)
 $black-bg: #000000;
-
 $black-text: #333333;
 $gray: #525252;
 $light-gray: #F0F0F0;
@@ -49,13 +48,14 @@ $layer: (
 $transition-change-time: 0.5s;
 
 // フォントインポート
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&family=Noto+Sans+JP&display=swap');
 
 // ---------------------------------------------------------------------------
 // フォント
 // ---------------------------------------------------------------------------
 $font-family-default: "Yu Gothic","游ゴシック体",  yugothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", meiryo, "MS Pゴシック", "MS PGothic", sans-serif; // 標準フォント
 $font-family-english: 'Montserrat',sans-serif;
+$font-family-notosans: 'Noto Sans JP',sans-serif;
 $font-family-base: $font-family-default;
 $font-weight-base: 400;
 $font-weight-medium: 500;
