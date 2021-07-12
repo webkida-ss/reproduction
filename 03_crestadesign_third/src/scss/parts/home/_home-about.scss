@@ -1,6 +1,7 @@
 $home-about-linear-width-pc: 771px;
 $home-about-bg: $light-gray;
 .home-about{ 
+    padding: 120px 0 60px;
 	background: linear-gradient(
 	to top, $home-about-bg 0 , $home-about-bg $home-about-linear-width-pc
 	,transparent $home-about-linear-width-pc, transparent 100%);
@@ -49,21 +50,29 @@ $home-about-bg: $light-gray;
     }
 
     &__lower{
+        margin-top: 80px;
         display: flex;
+        justify-content: space-between;
         &--item{
+            width: ( 520px/$layout-width-inner-pc) *100%;
+        }
+        &--title{
         
         }
         &--img{
-            width: ( 520px/$layout-width-inner-pc) *100%;
+            margin-top: 30px;
+            img{
+                width: 100%;
+            }
         }
         &--context{
         
         }
         &--text{
-        
+            margin-top: 30px;
         }
         &--link{
-        
+            margin-top: 28px;
         }
         
     }
