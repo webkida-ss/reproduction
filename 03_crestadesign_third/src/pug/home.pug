@@ -65,6 +65,17 @@ block content
 
 			//- home-latest-topics
 			section.home-latest-topics
+				.inner.home-latest-topics__inner
+					h2.section__title.home-latest-topics__title LATEST TOPICS
+					ul.home-latest-topics__list
+						each item in homeLatestTopicsList
+							//- item
+							li.home-latest-topics__item 
+								time(datetime=item.dateTag) #{item.date}
+								p #{item.text}
+					.util__link.home-latest-topics__link
+						a(href="#") READ MORE
+
 
 			//- home-contact
 			section.home-contact

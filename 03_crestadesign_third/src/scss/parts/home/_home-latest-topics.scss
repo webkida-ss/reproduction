@@ -1,8 +1,7 @@
 .home-latest-topics{ 
-
+    padding: 60px 0;
     &__inner{
         // width:(*px / $layout-width-canvas-pc) * 100%;
-        // padding: 0 *px 0 *px;
         @include mq(tab-only) {
             // width:(*px / $layout-width-canvas-tab) * 100%;
             // padding: 0 *px 0 *px;
@@ -16,4 +15,32 @@
     &__title{
         // 
     }
+    &__list{
+        margin-top: 30px;
+        width: 700px;
+        margin-left: auto;
+    }
+    &__item{
+        border-bottom: 1px solid #DDDDDD;
+        padding-bottom: 12px;
+        & +& {
+            margin-top: 30px;
+        }
+        time{
+            font-family: $font-family-english;
+            color: #CECECE;
+            font-size: 1rem;
+            font-weight: $font-weight-bold;
+        }
+        p{
+            margin-top: 12px;
+            font-size: 1.4rem;
+            font-weight: $font-weight-bold;
+        }
+    }
+    &__link{
+        margin-top: 30px;
+        margin-left: auto;
+    }
+
 }
