@@ -17,9 +17,15 @@
 @import 'parts/home/_home-latest-topics';// 
 @import 'parts/home/_home-contact';// 
 
+// about
+@import 'parts/about/_about-top';// 
+@import 'parts/about/_about-visual';// 
+@import 'parts/about/_about-message';// 
+@import 'parts/about/_about-contact';// 
 
-@import 'parts/_access';// アクセス
-@import 'parts/_contact';// お問い合わせ
+// contact
+@import 'parts/contact/_contact-top';//
+@import 'parts/contact/_contact-main';// 
 
 // components
 @import 'components/_footer';// フッター
