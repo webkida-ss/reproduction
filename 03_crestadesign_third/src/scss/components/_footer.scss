@@ -1,8 +1,15 @@
 .footer {
-	&__inner {
-		// 
-	}
-	&__copy-right {
-		// 
+	height: 50px;
+	color: $white;
+	font-size: 1rem;
+	font-family: $font-family-english;
+	background: $gray;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	&__copy-right{
+	
 	}
 }
