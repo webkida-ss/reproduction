@@ -1,19 +1,43 @@
-.about-message{ 
+.about-message {
+    &__inner {
+        position: relative;
+        padding-top: 144px;
+		@include mq(tab-only) {
+			// width:(*px / $layout-width-canvas-tab) * 100%;
+			// padding: 0 *px 0 *px;
+		}
+		@include mq(sp) {
+			// width:(*px / $layout-width-canvas-sp) * 100%;
+			// padding: 0 *px 0 *px;
+		}
+	}
+	&__bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 420px;
+		height: 282.45px;
+        background-image: url(../img/about/ceo.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+	}
 
-    &__inner{
-        // width:(*px / $layout-width-canvas-pc) * 100%;
-        // padding: 0 *px 0 *px;
-        @include mq(tab-only) {
-            // width:(*px / $layout-width-canvas-tab) * 100%;
-            // padding: 0 *px 0 *px;
-        }
-        @include mq(sp) {
-            // width:(*px / $layout-width-canvas-sp) * 100%;
-            // padding: 0 *px 0 *px;
-        }
+    &__content{
+        width: 770px;
+        padding: 120px 185px 90px;
+        background: $light-gray;
+        margin-left: auto;
+    
     }
 
-    &__title{
-        // 
+	&__title {
+		// 
+	}
+    &__context{
+        margin-top: 30px;
+        $about-message-line-height-pc: 2;
+        @include lhCrop($about-message-line-height-pc);
+        line-height: $about-message-line-height-pc;
     }
 }

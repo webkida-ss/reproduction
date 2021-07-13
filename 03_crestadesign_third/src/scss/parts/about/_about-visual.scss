@@ -1,8 +1,10 @@
+$about-visual-padding-pc: 396px;
 .about-visual{ 
-
+    padding: 120px 0;
     &__inner{
-        // width:(*px / $layout-width-canvas-pc) * 100%;
-        // padding: 0 *px 0 *px;
+        margin: 0 auto;
+        width: $layout-width-canvas-pc - ($about-visual-padding-pc * 2);
+        max-width: 100%;
         @include mq(tab-only) {
             // width:(*px / $layout-width-canvas-tab) * 100%;
             // padding: 0 *px 0 *px;
@@ -15,5 +17,17 @@
 
     &__title{
         // 
+    }
+    &__sub-title{
+        margin-top: 30px;
+        font-size: 2.4rem;
+        font-weight: $font-weight-bold;
+    }
+    &__context{
+        font-family: $font-family-notosans;
+        margin-top: 30px;
+        $about-visual-line-height-pc: 2;
+        @include lhCrop($about-visual-line-height-pc);
+        line-height: $about-visual-line-height-pc;
     }
 }
