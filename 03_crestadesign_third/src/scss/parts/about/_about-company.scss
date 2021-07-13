@@ -1,19 +1,59 @@
-.about-company{ 
+$about-company-border: 1px solid $light-gray-border;
+.about-company {
+	padding: 120px 0;
+	&__inner {
+		// width:(*px / $layout-width-canvas-pc) * 100%;
+		// padding: 0 *px 0 *px;
+		@include mq(tab-only) {
+			// width:(*px / $layout-width-canvas-tab) * 100%;
+			// padding: 0 *px 0 *px;
+		}
+		@include mq(sp) {
+			// width:(*px / $layout-width-canvas-sp) * 100%;
+			// padding: 0 *px 0 *px;
+		}
+	}
 
-    &__inner{
-        // width:(*px / $layout-width-canvas-pc) * 100%;
-        // padding: 0 *px 0 *px;
-        @include mq(tab-only) {
-            // width:(*px / $layout-width-canvas-tab) * 100%;
-            // padding: 0 *px 0 *px;
-        }
-        @include mq(sp) {
-            // width:(*px / $layout-width-canvas-sp) * 100%;
-            // padding: 0 *px 0 *px;
-        }
-    }
+	&__title {
+		&::after {
+			display: block;
+			bottom: 0;
+			width: 100%;
+			margin-top: 30px;
+			content: '';
 
-    &__title{
-        // 
-    }
+			border-bottom: $about-company-border;
+		}
+	}
+	&__list {
+		max-width: 800px;
+		margin-left: auto;
+	}
+	&__item {
+		display: flex;
+	}
+	&__item {
+		padding-top: 20px;
+		padding-bottom: 18px;
+
+		border-bottom: $about-company-border;
+		dt {
+			width: 144px;
+			font-weight: $font-weight-bold;
+		}
+	}
+	&__map {
+		position: relative;
+		width: 100%;
+		margin-top: 40px;
+		padding-top: 360 / 1100 * 100%;
+		> iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: none;
+		}
+	}
 }
