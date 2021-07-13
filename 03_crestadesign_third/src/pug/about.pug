@@ -1,4 +1,4 @@
-extends _layout
+src/pug/about.pugextends _layout
 
 //- タイトルを指定
 block title
@@ -18,7 +18,6 @@ block content
 		main.main 
 
 			//- about-top
-			//- about-top
 			section.about-top 
 				.about-top__bg 
 				.about-top__inner 
@@ -27,7 +26,7 @@ block content
 						p.about-top__message--sub DIGSMILEについて
 
 			//- about-visual
-			section.about-visual
+			section.section.about-visual
 				.about-visual__inner 
 					h2.section__title.about-visual__title VISION
 					h3.about-visual__sub-title デザインで人を笑顔にする会社
@@ -44,7 +43,7 @@ block content
 							| 私達はデザインの力を信じています。
 
 			//- about-message
-			section.about-message
+			section.section.about-message
 				.inner.about-message__inner
 					.about-message__bg 
 					.about-message__content
@@ -62,7 +61,7 @@ block content
 							| 私達はデザインの力で社会を良い方向に変革していく企業を目指していきます。
 
 			//- about-company
-			section.about-company
+			section.section.about-company
 				.inner.about-company__inner
 					h2.section__title.about-company__title COMPANY
 					dl.about-company__list 
@@ -72,7 +71,6 @@ block content
 								dd #{item.desc}
 					.about-company__map
 						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4246.331637711553!2d139.69947893056576!3d35.68927680438485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cd0d6b1ba1f%3A0x1c32a1f1ecacfdd5!2z5paw5a6_6aeF!5e0!3m2!1sja!2sjp!4v1626181725449!5m2!1sja!2sjp" width="1100" height="360" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
 
 		// フッター
 		include components/_footer
