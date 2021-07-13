@@ -30,17 +30,6 @@ jQuery(function () {
 	});
 
 	/*********************************************
-	 * フローティングアイテム
-	 *********************************************/
-	jQuery(window).on("scroll", function () {
-		if (jQuery(this).scrollTop() > 200) {
-			jQuery('.util__floating').addClass('is-show');
-		} else {
-			jQuery('.util__floating').removeClass('is-show');
-		}
-	});
-
-	/*********************************************
 	 * ドロワー
 	 * jQuery
 	 *********************************************/
