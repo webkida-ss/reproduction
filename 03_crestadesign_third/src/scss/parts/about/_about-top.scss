@@ -1,5 +1,5 @@
 $about-top-linear-width-pc: (780px / $layout-width-canvas-pc) * 100%;
-.about-top{ 
+.about-top {
 	position: relative;
 	height: 464px;
 	background: linear-gradient(
@@ -16,20 +16,31 @@ $about-top-linear-width-pc: (780px / $layout-width-canvas-pc) * 100%;
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
-    &__inner{
-        // width:(*px / $layout-width-canvas-pc) * 100%;
-        // padding: 0 *px 0 *px;
-        @include mq(tab-only) {
-            // width:(*px / $layout-width-canvas-tab) * 100%;
-            // padding: 0 *px 0 *px;
-        }
-        @include mq(sp) {
-            // width:(*px / $layout-width-canvas-sp) * 100%;
-            // padding: 0 *px 0 *px;
-        }
-    }
+	&__inner {
+		position: absolute;
+		top: 156px;
+		right: 170px;
+		color: $white;
 
-    &__title{
-        // 
-    }
+		@include mq(tab-only) {
+			// 
+		}
+		@include mq(sp) {
+			// 
+		}
+	}
+	&__title{
+		// 
+	}
+	&__message {
+		&--main {
+			// 
+		}		
+		&--sub {
+			margin-top: 10px;
+			font-family: $font-family-notosans;
+            font-size: 2rem;
+		}
+
+	}
 }
