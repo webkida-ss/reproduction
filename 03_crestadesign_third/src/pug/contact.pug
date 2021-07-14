@@ -42,11 +42,7 @@ block content
 										each item in contactKindList
 											.contact__item--radio
 												input(type="radio" id=item.id value=item.value name="request")
-												label(for=item.id) #{item.label}									
-									dd
-										select(name="kind")#kind
-											each item in contactKindList
-												option(value=item.value) #{item.label}
+												label(for=item.id) #{item.label}
 								//- 会社
 								.contact-main__item.is-company
 									dt 会社名・団体名
@@ -74,7 +70,7 @@ block content
 										textarea#remarks(name="remarks")
 							//- dl閉じ
 
-								// プライバリーポリシー
+							//- プライバリーポリシー
 								.contact-main__privacy
 									input#privacy(type="checkbox" name="privacy" checked)
 									label(for="privacy") 個人情報保護方針に同意する
