@@ -39,6 +39,11 @@ block content
 								.contact-main__item.is-kind
 									dt お問い合わせ種別
 									dd
+										each item in contactKindList
+											.contact__item--radio
+												input(type="radio" id=item.id value=item.value name="request")
+												label(for=item.id) #{item.label}									
+									dd
 										select(name="kind")#kind
 											each item in contactKindList
 												option(value=item.value) #{item.label}
