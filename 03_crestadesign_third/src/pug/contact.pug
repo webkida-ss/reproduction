@@ -28,63 +28,56 @@ block content
 			//- contact-main
 			section.section.contact-main 
 				.inner.contact-main__inner
-					p.contact-main__lead 
+					p.contact-main__lead ご依頼やご相談についてのご質問やご要望がございましたら、
+						| 下記フォームよりお気軽にお問い合わせください。
+						| 送付いただいた内容を確認の上、担当者からご連絡させていただきます。
 					//- お問い合わせフォーム
-					.contact__content
+					.contact-main__content 
 						form(action="#" method="post")
-							dl.contact__list
-								// 種別
-								.contact__item
-									dt.contact__item--title 種別
-									dd.contact__item--desc
+							dl.contact-main__list
+								//- お問い合わせ種別
+								.contact-main__item.is-kind
+									dt お問い合わせ種別
+									dd
 										select(name="kind")#kind
-											//- each item in contactOptionList
-											//- 	option(value=item.value) #{item.label}
-											//- // 氏名
-											//- .contact__item
-											//- 	dt.contact__item--title 氏名
-											//- 	dd.contact__item--desc
-											//- 		input#name(type="text" name="name" placeholder="氏名")
-											//- // フリガナ 
-											//- .contact__item
-											//- 	dt.contact__item--title フリガナ
-											//- 	dd.contact__item--desc
-											//- 		input#name_kana(type="text" name="name_kana" placeholder="フリガナ")
-											//- // 電話番号 
-											//- .contact__item
-											//- 	dt.contact__item--title 電話番号
-											//- 	dd.contact__item--desc
-											//- 		input#phone(type="tel" name="phone" placeholder="09012345678")
-											//- // メールアドレス 
-											//- .contact__item
-											//- 	dt.contact__item--title メールアドレス
-											//- 	dd.contact__item--desc
-											//- 		input#email(type="email" name="email" placeholder="sample@example.com")
-											//- // ご依頼内容
-											//- .contact__item
-											//- 	dt.contact__item--title ご依頼内容
-											//- 	dd.contact__item--desc.is-request
-											//- 		each item in contactRequestList
-											//- 			.contact__radio
-											//- 				input(type="radio" id=item.id value=item.value name="request-context")
-											//- 				label(for=item.id) #{item.label}
-											//- // 備考
-											//- .contact__item
-											//- 	dt.contact__item--title 備考
-											//- 	dd.contact__item--desc
-											//- 		textarea#remarks(name="remarks")
-											//- dl閉じ
+											each item in contactKindList
+												option(value=item.value) #{item.label}
+								//- 会社
+								.contact-main__item.is-company
+									dt 会社名・団体名
+									dd
+										input#name(type="text" name="company" placeholder="会社名")
+								//- お名前
+								.contact-main__item.is-name
+									dt お名前
+									dd
+										input#name(type="text" name="name" placeholder="お名前")
+								//- メールアドレス 
+								.contact-main__item.is-email
+									dt メールアドレス
+									dd
+										input#email(type="email" name="email" placeholder="sample@example.com")
+								//- 電話番号 
+								.contact-main__item.is-phone
+									dt 電話番号
+									dd
+										input#phone(type="tel" name="phone" placeholder="09012345678")
+								//- お問い合わせ内容
+								.contact-main__item.is-content
+									dt お問い合わせ内容
+									dd
+										textarea#remarks(name="remarks")
+							//- dl閉じ
 
-											// プライバリーポリシー
-											.contact__privacy
-												input#privacy(type="checkbox" name="privacy" checked)
-												label(for="privacy") 個人情報保護方針に同意する
-											// 送信ボタン
-											button#submit(disabled).contact__submit 送信する
+								// プライバリーポリシー
+								.contact-main__privacy
+									input#privacy(type="checkbox" name="privacy" checked)
+									label(for="privacy") 個人情報保護方針に同意する
+								// 送信ボタン
+								button#submit(disabled).contact-main__submit 送信する
 						//- form閉じ
 
 					//- お問い合わせフォーム終了
-
 
 		// フッター
 		include components/_footer

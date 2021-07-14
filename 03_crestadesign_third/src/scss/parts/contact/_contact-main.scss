@@ -1,7 +1,7 @@
 .contact-main{ 
-
+    padding: 120px 0;
     &__inner{
-        // width:(*px / $layout-width-canvas-pc) * 100%;
+        width: 700px;
         // padding: 0 *px 0 *px;
         @include mq(tab-only) {
             // width:(*px / $layout-width-canvas-tab) * 100%;
@@ -13,7 +13,14 @@
         }
     }
 
-    &__title{
-        // 
+    &__lead{
+        $contact-main-line-height-pc: 1.5;
+        @include lhCrop($contact-main-line-height-pc);
+        line-height: $contact-main-line-height-pc;
+        font-family: $font-family-notosans;
+        
+    }
+    &__content{
+        margin-top: 55px;
     }
 }
