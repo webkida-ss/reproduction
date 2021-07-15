@@ -66,10 +66,11 @@
             // ラジオボタン以外は、横幅いっぱい
 			input:not([type="radio"]),textarea{
 				width: 100%;
-				
 				&:hover,
 				&:focus{
 					outline: none;
+					box-shadow: 0px 0px 5px 0px $blue-active;
+					border: 1px solid $blue-active;
 				}
 			}
             input{
@@ -77,7 +78,10 @@
 				padding: 5px 10px;
             }
 			textarea {
+				font-family: $font-family-notosans;
+				line-height: 1.5;
 				padding: 10px;
+				white-space: pre-wrap;// textareaに改行
 			}
 			input[type='text'] {
 				// 
@@ -116,7 +120,7 @@
 			}
 		}
 		&.is-privacy-check {
-			// 
+			text-align: center;
 		}
 
 		// ラジオボタン（横並びかつ、ラベルとボタンも横並び）
@@ -125,4 +129,24 @@
 			align-items: center;
 		}
     }
+	&__submit{
+		font-weight: $font-weight-bold;
+		margin: 41px auto 0;
+		display: block;
+		width: 160px;
+		height: 36px;
+		border-width: $util-link-border-size;
+		border-style: solid;
+		border-color: $black-bg;
+		background: $black-bg;
+		color: $white;
+		transition: all $transition-change-time ease 0s;
+		font-size: 1.4rem;
+		line-height: getLineHeightForBox($util-link-height-pc, $util-link-border-size);
+		&:hover {
+			background: $white;
+			color: $black-text;
+			cursor: pointer;
+		}
+	}
 }
