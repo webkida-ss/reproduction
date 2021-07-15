@@ -37,10 +37,10 @@ block content
 							dl.contact-main__list
 								//- お問い合わせ種別
 								.contact-main__item.is-kind
-									dt お問い合わせ種別
+									dt.is-required お問い合わせ種別
 									dd
 										each item in contactKindList
-											.contact__item--radio
+											.contact-main__item--radio
 												input(type="radio" id=item.id value=item.value name="request")
 												label(for=item.id) #{item.label}
 								//- 会社
@@ -50,12 +50,12 @@ block content
 										input#name(type="text" name="company" placeholder="会社名")
 								//- お名前
 								.contact-main__item.is-name
-									dt お名前
+									dt.is-required お名前
 									dd
 										input#name(type="text" name="name" placeholder="お名前")
 								//- メールアドレス 
 								.contact-main__item.is-email
-									dt メールアドレス
+									dt.is-required メールアドレス
 									dd
 										input#email(type="email" name="email" placeholder="sample@example.com")
 								//- 電話番号 
@@ -65,7 +65,7 @@ block content
 										input#phone(type="tel" name="phone" placeholder="09012345678")
 								//- お問い合わせ内容
 								.contact-main__item.is-content
-									dt お問い合わせ内容
+									dt.is-required お問い合わせ内容
 									dd
 										textarea#remarks(name="remarks")
 							//- dl閉じ

@@ -1,26 +1,113 @@
-.contact-main{ 
-    padding: 120px 0;
-    &__inner{
-        width: 700px;
-        // padding: 0 *px 0 *px;
-        @include mq(tab-only) {
-            // width:(*px / $layout-width-canvas-tab) * 100%;
-            // padding: 0 *px 0 *px;
-        }
-        @include mq(sp) {
-            // width:(*px / $layout-width-canvas-sp) * 100%;
-            // padding: 0 *px 0 *px;
-        }
-    }
+.contact-main {
+	padding: 120px 0;
+	&__inner {
+		width: 700px;
+		// padding: 0 *px 0 *px;
 
-    &__lead{
-        $contact-main-line-height-pc: 1.5;
-        @include lhCrop($contact-main-line-height-pc);
-        line-height: $contact-main-line-height-pc;
-        font-family: $font-family-notosans;
-        
-    }
-    &__content{
-        margin-top: 55px;
+		@include mq(tab-only) {
+			// width:(*px / $layout-width-canvas-tab) * 100%;
+			// padding: 0 *px 0 *px;
+		}
+		@include mq(sp) {
+			// width:(*px / $layout-width-canvas-sp) * 100%;
+			// padding: 0 *px 0 *px;
+		}
+	}
+
+    $contact-main-line-height-pc: 1.5;
+	&__lead {
+		line-height: $contact-main-line-height-pc;
+		font-family: $font-family-notosans;
+		@include lhCrop($contact-main-line-height-pc);
+	}
+	&__content {
+		margin-top: 55px;
+	}
+	&__list {
+		// 
+	}
+
+	&__item {
+		margin-top: 20px;
+		// ===========================
+		// 共通設定
+		// ===========================
+
+		// タイトル ====================
+		dt {
+			// 必須マーク
+			&.is-required {
+				display: flex;
+				align-items: center;
+				&::after {
+					display: block;
+					width: 34px;
+					height: 18px;
+					margin-left: 20px;
+					background: $black-text;
+					color: $white;
+					font-size: 1.2rem;
+					line-height: 18px;
+					font-family: $font-family-notosans;
+					text-align: center;
+					content: '必須';
+				}
+			}
+		}
+
+		// 内容 ====================
+		dd {
+			select {
+				// 
+			}
+            // ラジオボタン以外は、横幅いっぱい
+			input:not([type="radio"]),textarea{
+				width: 100%;
+				&:hover,
+				&:focus{
+					outline: none;
+				}
+			}
+            input{
+                // 
+            }
+			textarea {
+				// 
+			}
+			input[type='text'] {
+				// 
+			}
+			input[type='email'] {
+				// 
+			}
+		}
+
+		// ===========================
+		// 個別設定
+		// ===========================
+		&.is-kind {
+			// 
+		}
+		&.is-company {
+			// 
+		}
+		&.is-name {
+			// 
+		}
+		&.is-email {
+			// 
+		}
+		&.is-phone {
+			// 
+		}
+		&.is-content {
+			// 
+		}
+
+		// ラジオボタン（横並びかつ、ラベルとボタンも横並び）
+		&--radio {
+			display: inline-flex;
+			align-items: center;
+		}
     }
 }
