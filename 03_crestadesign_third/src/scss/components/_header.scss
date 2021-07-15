@@ -56,14 +56,9 @@
 
 
 		&--list {
-			display: flex;// 横並び
-			justify-content: center;// 左右中央揃え
-			align-items: center;// 上下中央揃え
-			height: inherit;
-
-			@include mq(sp) {
-				display: block;
-			}
+			padding-top: 50px;
+			display: block;
+			text-align: center;
 		}
 		&--item {
 			@include mq(tab-only) {
@@ -75,12 +70,12 @@
 				text-align: center;
 			}
 			& + & {
-				// margin-left: *px;
+				margin-top: 30px;
 				@include mq(tab-only) {
-					// margin-left: *px;
+					// 
 				}
 				@include mq(sp) {
-					// margin: 10px 0 0 0;
+					// 
 				}
 			}
 		}
@@ -94,6 +89,8 @@
 				width: 100%;
 				height: 2px;
 				content: '';
+				bottom: -5px;
+				left: 0;
 				// opacity: 0;// opacity方式でも可能
 				transition: transform $transition-change-time ease 0s;
 
@@ -173,6 +170,9 @@
 			font-weight: $font-weight-extrabold;
 			font-size: 1rem;
 			font-family: $font-family-english;
+			&.is-checked{
+				display: none;
+			}
 		}
 	}
 	&__drawer-bg {// 背景
