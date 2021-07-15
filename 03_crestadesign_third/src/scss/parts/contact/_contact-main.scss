@@ -28,7 +28,9 @@
 	}
 
 	&__item {
-		margin-top: 20px;
+		& + &{
+			margin-top: 45px;
+		}
 		// ===========================
 		// 共通設定
 		// ===========================
@@ -57,22 +59,25 @@
 
 		// 内容 ====================
 		dd {
+			margin-top: 12px;
 			select {
 				// 
 			}
             // ラジオボタン以外は、横幅いっぱい
 			input:not([type="radio"]),textarea{
 				width: 100%;
+				
 				&:hover,
 				&:focus{
 					outline: none;
 				}
 			}
             input{
-                // 
+                height: 41px;
+				padding: 5px 10px;
             }
 			textarea {
-				// 
+				padding: 10px;
 			}
 			input[type='text'] {
 				// 
@@ -101,6 +106,16 @@
 			// 
 		}
 		&.is-content {
+			textarea{
+				height: 212px;
+			}
+		}
+		&.is-privacy-text {
+			textarea{
+				height: 242px;
+			}
+		}
+		&.is-privacy-check {
 			// 
 		}
 

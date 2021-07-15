@@ -68,14 +68,20 @@ block content
 									dt.is-required お問い合わせ内容
 									dd
 										textarea#remarks(name="remarks")
+								//- プライバリーポリシー（テキスト）
+								.contact-main__item.is-privacy-text
+									dt.is-required PRIVACY POLICY
+									dd
+										textarea
+
+								//- プライバリーポリシー（チェックボックス）
+								.contact-main__item.is-privacy-check
+									input#privacy(type="checkbox" name="privacy" checked)
+									label(for="privacy") 個人情報の取り扱いについて同意のうえ送信します。
 							//- dl閉じ
 
-							//- プライバリーポリシー
-								.contact-main__privacy
-									input#privacy(type="checkbox" name="privacy" checked)
-									label(for="privacy") 個人情報保護方針に同意する
-								// 送信ボタン
-								button#submit(disabled).contact-main__submit 送信する
+							//- 送信ボタン
+							button#submit(disabled).contact-main__submit 送信する
 						//- form閉じ
 
 					//- お問い合わせフォーム終了
