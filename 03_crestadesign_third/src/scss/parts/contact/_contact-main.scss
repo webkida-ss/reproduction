@@ -130,23 +130,23 @@
 		}
     }
 	&__submit{
-		font-weight: $font-weight-bold;
 		margin: 41px auto 0;
-		display: block;
-		width: 160px;
-		height: 36px;
-		border-width: $util-link-border-size;
-		border-style: solid;
-		border-color: $black-bg;
-		background: $black-bg;
-		color: $white;
-		transition: all $transition-change-time ease 0s;
-		font-size: 1.4rem;
-		line-height: getLineHeightForBox($util-link-height-pc, $util-link-border-size);
-		&:hover {
-			background: $white;
-			color: $black-text;
-			cursor: pointer;
-		}
+		// font-weight: $font-weight-bold;
+		// display: block;
+		// width: 160px;
+		// height: 36px;
+		// border-width: $util-link-border-size;
+		// border-style: solid;
+		// border-color: $black-bg;
+		// background: $black-bg;
+		// color: $white;
+		// transition: all $transition-change-time ease 0s;
+		// font-size: 1.4rem;
+		// line-height: getLineHeightForBox($util-link-height-pc, $util-link-border-size);
+		// &:hover {
+		// 	background: $white;
+		// 	color: $black-text;
+		// 	cursor: pointer;
+		// }
 	}
 }
