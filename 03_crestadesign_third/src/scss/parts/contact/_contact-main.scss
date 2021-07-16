@@ -64,7 +64,7 @@
 				// 
 			}
             // ラジオボタン以外は、横幅いっぱい
-			input:not([type="radio"]),textarea{
+			input:not([type='radio']),textarea{
 				width: 100%;
 				&:hover,
 				&:focus{
@@ -89,6 +89,7 @@
 			input[type='email'] {
 				// 
 			}
+	
 		}
 
 		// ===========================
@@ -123,30 +124,66 @@
 			text-align: center;
 		}
 
+		// ============================================
 		// ラジオボタン（横並びかつ、ラベルとボタンも横並び）
+		// ============================================
 		&--radio {
+			// 要素を横並びに
 			display: inline-flex;
 			align-items: center;
+			// デフォルトボタン
+			input[type='radio'] {
+				// デフォルトのボタンは非表示
+				display: none;
+				// チェックつけたときはカスタムボタンの色変化
+				&:checked{
+					& + label{
+						&::after {
+							background: $black-text;
+						}
+					}
+				}
+			}
+			// 文言
+			label{
+				// カスタムボタンを配置するスペース確保
+				margin-left: 50px;
+				position: relative;
+				// カスタムボタン
+				&::before,
+				&::after {
+					display: block;
+					position: absolute;
+					border-radius: 50%;
+					content: '';
+					transition: all $transition-change-time ease 0s;
+				}
+				// カスタムボタン 外◯
+				&::before {
+					top: 5px;
+					left: -20px;
+					width: 16px;
+					height: 16px;
+					border: 1px solid $black-text;
+					@include mq(sp) {
+						top: 2px;
+					}
+				}
+				// カスタムボタン 内◯
+				&::after {
+					top: 10px;
+					left: -15px;
+					width: 6px;
+					height: 6px;
+					background: $white;
+					@include mq(sp) {
+						top: 7px;
+					}
+				}				
+			}
 		}
     }
 	&__submit{
 		margin: 41px auto 0;
-		// font-weight: $font-weight-bold;
-		// display: block;
-		// width: 160px;
-		// height: 36px;
-		// border-width: $util-link-border-size;
-		// border-style: solid;
-		// border-color: $black-bg;
-		// background: $black-bg;
-		// color: $white;
-		// transition: all $transition-change-time ease 0s;
-		// font-size: 1.4rem;
-		// line-height: getLineHeightForBox($util-link-height-pc, $util-link-border-size);
-		// &:hover {
-		// 	background: $white;
-		// 	color: $black-text;
-		// 	cursor: pointer;
-		// }
 	}
 }
