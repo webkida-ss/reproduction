@@ -89,41 +89,13 @@
 			input[type='email'] {
 				// 
 			}
-	
-		}
-
-		// ===========================
-		// 個別設定
-		// ===========================
-		&.is-kind {
-			// 
-		}
-		&.is-company {
-			// 
-		}
-		&.is-name {
-			// 
-		}
-		&.is-email {
-			// 
-		}
-		&.is-phone {
-			// 
-		}
-		&.is-content {
-			textarea{
-				height: 212px;
+			// ============================================
+			// チェックボックス
+			// ============================================
+			input[type='checkbox'] {
+				// display: none;
 			}
 		}
-		&.is-privacy-text {
-			textarea{
-				height: 242px;
-			}
-		}
-		&.is-privacy-check {
-			text-align: center;
-		}
-
 		// ============================================
 		// ラジオボタン（横並びかつ、ラベルとボタンも横並び）
 		// ============================================
@@ -181,6 +153,37 @@
 					}
 				}				
 			}
+		}
+		// ===========================
+		// 個別設定
+		// ===========================
+		&.is-kind {
+			// 
+		}
+		&.is-company {
+			// 
+		}
+		&.is-name {
+			// 
+		}
+		&.is-email {
+			// 
+		}
+		&.is-phone {
+			// 
+		}
+		&.is-content {
+			textarea{
+				height: 212px;
+			}
+		}
+		&.is-privacy-text {
+			textarea{
+				height: 242px;
+			}
+		}
+		&.is-privacy-check {
+			text-align: center;
 		}
     }
 	&__submit{
