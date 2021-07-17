@@ -44,7 +44,7 @@ $home-about-bg: $light-gray;
             background: $white;
             width: 590px;
             height: 387px;
-            padding: 53px 30px 0px;
+            padding: 53px 33px 0px 30px;
             @include mq(tab-only) {
                 top: 50%;
                 left: 50%;
@@ -68,15 +68,19 @@ $home-about-bg: $light-gray;
             @include lhCrop($home-about-line-height-pc);
             line-height: $home-about-line-height-pc;
             font-family: $font-family-notosans;
-
+            letter-spacing: -0.01em;
+            text-align: justify;
+            span{
+                letter-spacing: 0.035em;
+            }
         }
         &--link{
-            margin-top: 30px;
+            margin-top: 34px;
         }
     }
 
     &__lower{
-        margin-top: 80px;
+        margin-top: 84px;
         display: flex;
         justify-content: space-between;
         
@@ -103,23 +107,17 @@ $home-about-bg: $light-gray;
                 }
             }
         }
-        &--title{
-        
-        }
         &--img{
-            margin-top: 30px;
+            margin-top: 33px;
             img{
                 width: 100%;
             }
-        }
-        &--context{
-        
         }
         &--text{
             margin-top: 30px;
         }
         &--link{
-            margin-top: 28px;
+            margin-top: 30px;
         }
         
     }
