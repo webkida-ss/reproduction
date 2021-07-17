@@ -1148,7 +1148,7 @@ textarea {
 }
 
 .contact-main__content {
-  margin-top: 55px;
+  margin-top: 62px;
 }
 
 .contact-main__item + .contact-main__item {
@@ -1168,7 +1168,7 @@ textarea {
   display: block;
   width: 34px;
   height: 18px;
-  margin-left: 20px;
+  margin-left: 10px;
   background: #333333;
   color: #ffffff;
   font-size: 1.2rem;
