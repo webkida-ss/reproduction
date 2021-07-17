@@ -11,8 +11,8 @@
 	}
 	&__title {
 		// ロゴなら
-		width: 100px;
-		height: 100px;
+		width: 260px;
+		height: 28px;
 		transition: opacity $transition-change-time ease 0s;
 		img {
 			width: 100%;
@@ -23,6 +23,10 @@
 			opacity: .6;
 			cursor: pointer;
 		}
+		@include mq(tab-only) {
+			width: 189px;
+			height: 20px;
+		}
 	}
 
 	&__inner {
@@ -31,6 +35,12 @@
 		align-items: center;
 		height: inherit;
 		padding: 0 58px;
+		@include mq(tab-only) {
+			padding: 0 30px;
+		}
+		@include mq(sp) {
+			padding: 0 15px;
+		}
 	}
 
 	// ------------------------------------------------------------
@@ -53,7 +63,6 @@
 		&.is-checked {
 			transform: translateX(0%); // 元の位置に移動
 		}
-
 
 		&--list {
 			padding-top: 50px;
