@@ -29,7 +29,7 @@
 			opacity: .6;
 			cursor: pointer;
 		}
-		@include mq(tab-only) {
+		@include mq(tab) {
 			width: 189px;
 			height: 20px;
 		}
