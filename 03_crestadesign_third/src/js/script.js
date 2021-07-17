@@ -15,7 +15,7 @@ jQuery(function () {
 	/*********************************************
 	 * スムーススクロール
 	 *********************************************/
-	jQuery('a[href^="index.html#"]').click(function () {
+	jQuery('a[href^="#"]').click(function () {
 		let header = jQuery('.header').innerHeight();
 		let speed = 500;
 		let id = jQuery(this).attr("href"); // 遷移先ID（href属性）
