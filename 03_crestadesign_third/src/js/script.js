@@ -45,10 +45,4 @@ jQuery(function () {
 		let targetClass = drawerBtn.attr("data-target");
 		jQuery("." + targetClass).removeClass('is-checked');
 	});
-	jQuery(window).resize(function () {
-		if (jQuery(window).width() > 559) {
-			let targetClass = drawerBtn.attr("data-target");
-			jQuery("." + targetClass).removeClass('is-checked');
-		}
-	});
 })
