@@ -28,6 +28,7 @@
         @include mq(sp) {
             width: 340px;
             height: 230px;
+            left: -15px;
         }
 	}
 
@@ -39,7 +40,10 @@
         @include mq(tab-only) {
             width: 494px;
             padding: 100px 40px 40px;
-            
+        }
+        @include mq(sp) {
+            width: 345px;
+            padding: 126px 28px 70px;
         }
     }
 
@@ -53,7 +57,8 @@
         $about-message-line-height-pc: 2;
         @include lhCrop($about-message-line-height-pc);
         line-height: $about-message-line-height-pc;
-        @include mq(tab-only) {
+        @include mq(sp) {
+            font-size: 1.4rem;
         }
     }
 }
