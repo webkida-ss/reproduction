@@ -1,4 +1,5 @@
  $home-top-linear-width-pc: (780px / $layout-width-canvas-pc) * 100%;
+
 .home-top {
 	position: relative;
 	height: 740px;
@@ -8,6 +9,9 @@
 
 	@include mq(tab-only) {
 		height: 1024px;
+	}
+	@include mq(sp) {
+		height: 667px;
 	}
 
 	&__bg {
@@ -26,6 +30,10 @@
 			width: 600px;
 			height: 890px;
 		}
+		@include mq(sp) {
+			width: 287px;
+			height: 580px;
+		}
 	}
 	&__inner {
 		position: absolute;
@@ -38,7 +46,8 @@
 			right: 80px;
 		}
 		@include mq(sp) {
-			// 
+			top: 182px;
+			right: 15px;
 		}
 	}
 
@@ -48,6 +57,9 @@
 			font-size: 2rem;
 			span {
 				font-family: $font-family-english;
+			}
+			@include mq(tab) {
+				font-size: 1.6rem;
 			}
 		}
 		&--main {
