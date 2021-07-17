@@ -20,8 +20,8 @@ $contact-top-linear-width-pc: 780px;
 	}
 	&__inner {
 		position: absolute;
-		top: 156px;
-		right: 150px;
+		top: 165px;
+		right: 145px;
 		z-index: 5;
 		color: $white;
 
@@ -33,16 +33,14 @@ $contact-top-linear-width-pc: 780px;
 		}
 	}
 	&__title {
-		// 
+		letter-spacing: 0.063em;
 	}
 	&__message {
-		&--main {
-			// 
-		}
 		&--sub {
-			margin-top: 10px;
+			margin-top: 6px;
 			font-size: 2rem;
 			font-family: $font-family-notosans;
+			font-weight: $font-weight-bold;
 		}
 	}
 }

@@ -1109,16 +1109,21 @@ textarea {
 
 .contact-top__inner {
   position: absolute;
-  top: 156px;
-  right: 150px;
+  top: 165px;
+  right: 145px;
   z-index: 5;
   color: #ffffff;
 }
 
+.contact-top__title {
+  letter-spacing: 0.063em;
+}
+
 .contact-top__message--sub {
-  margin-top: 10px;
+  margin-top: 6px;
   font-size: 2rem;
   font-family: "Noto Sans JP", sans-serif;
+  font-weight: 600;
 }
 
 .contact-main {
