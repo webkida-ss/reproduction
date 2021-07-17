@@ -6,6 +6,10 @@
 	to left, $black-bg-top 0 , $black-bg-top $home-top-linear-width-pc
 	,transparent $home-top-linear-width-pc,transparent 100%);
 
+	@include mq(tab-only) {
+		height: 1024px;
+	}
+
 	&__bg {
 		position: absolute;
 		top: 0;
@@ -18,6 +22,10 @@
 		background-repeat: no-repeat;
 		// 背景黒透明
 		@extend %bg-darken;
+		@include mq(tab-only) {
+			width: 600px;
+			height: 890px;
+		}
 	}
 	&__inner {
 		position: absolute;
@@ -26,7 +34,8 @@
 		color: $white;
 		z-index: 5;
 		@include mq(tab-only) {
-			// 
+			top: 333px;
+			right: 80px;
 		}
 		@include mq(sp) {
 			// 
