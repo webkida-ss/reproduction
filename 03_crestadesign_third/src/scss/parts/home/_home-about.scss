@@ -2,16 +2,18 @@ $home-about-linear-width-pc: 771px;
 $home-about-bg: $light-gray;
 .home-about{ 
     padding: 120px 0 60px;
-	background: linear-gradient(
-	to top, $home-about-bg 0 , $home-about-bg $home-about-linear-width-pc
-	,transparent $home-about-linear-width-pc, transparent 100%);
-
+    background: linear-gradient(
+        to top, $home-about-bg 0 , $home-about-bg $home-about-linear-width-pc
+        ,transparent $home-about-linear-width-pc, transparent 100%);
+    @include mq(tab-only) {
+        padding: 80px 0 60px;
+    }
     &__inner{
         @include mq(tab-only) {
-            // width:(*px / $layout-width-canvas-tab) * 100%;
+            width: 100%;
         }
         @include mq(sp) {
-            // width:(*px / $layout-width-canvas-sp) * 100%;
+            width: 100%;
         }
     }
 
@@ -31,6 +33,11 @@ $home-about-bg: $light-gray;
             width: 590px;
             height: 387px;
             padding: 50px 30px 0px;
+            @include mq(tab-only) {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
         }
 
         &--title{
@@ -52,8 +59,19 @@ $home-about-bg: $light-gray;
         margin-top: 80px;
         display: flex;
         justify-content: space-between;
+        
+
+        @include mq(tab) {
+            display: block;
+            padding-left: 30px;
+        }
         &--item{
             width: ( 520px/$layout-width-inner-pc) *100%;
+            @include mq(tab-only) {
+                & +&{
+                    margin-top: 80px;
+                }
+            }
         }
         &--title{
         
