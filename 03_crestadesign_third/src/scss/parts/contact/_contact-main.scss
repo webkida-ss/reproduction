@@ -64,7 +64,7 @@
 				// 
 			}
             // ラジオボタン以外は、横幅いっぱい
-			input:not([type='radio']),textarea{
+			input:not([type='radio']):not([type='checkbox']),textarea{
 				width: 100%;
 				&:hover,
 				&:focus{
@@ -89,11 +89,60 @@
 			input[type='email'] {
 				// 
 			}
-			// ============================================
-			// チェックボックス
-			// ============================================
 			input[type='checkbox'] {
-				// display: none;
+				// 
+			}
+		}
+		// ============================================
+		// チェックボックス
+		// ============================================
+		&.is-checkbox{
+			text-align: center;
+			
+			// デフォルトチェックボックス非表示
+			input[type='checkbox'] {
+				display: none;
+				&:checked{
+					& + label{
+						&::before{
+							background: $black-bg;
+						}
+						&::after{
+							opacity: 1;
+						}
+					}
+				}
+			}
+			// ラベル
+			label{
+				position: relative;
+				// カスタムチェックボックス
+				&::before,
+				&::after {
+					display: block;
+					position: absolute;
+					content: '';
+					transition: all $transition-change-time ease 0s;
+				}
+				// カスタムチェックボックス 外枠
+				&::before {
+					top: -2px;
+					left: -30px;
+					width: 20px;
+					height: 20px;
+					border: 1px solid $black-bg;
+				}
+				// カスタムボタン 内ぺけ
+				&::after {
+					top: 0px;
+					left: -23px;
+					width: 6px;
+					height: 12px;
+					border-bottom: 2px solid $white;
+					border-right: 2px solid $white;
+					transform: rotate(45deg);
+					opacity: 0;
+				}
 			}
 		}
 		// ============================================
@@ -105,7 +154,7 @@
 			align-items: center;
 			// デフォルトボタン
 			input[type='radio'] {
-				// デフォルトのボタンは非表示
+				// デフォルトボタン非表示
 				display: none;
 				// チェックつけたときはカスタムボタンの色変化
 				&:checked{
@@ -116,7 +165,7 @@
 					}
 				}
 			}
-			// 文言
+			// ラベル
 			label{
 				// カスタムボタンを配置するスペース確保
 				margin-left: 80px;
@@ -189,7 +238,7 @@
 			}
 		}
 		&.is-privacy-check {
-			text-align: center;
+			// 
 		}
     }
 	&__submit{
