@@ -716,7 +716,25 @@ textarea {
 
 @media (max-width: 959px) {
   .home-latest-topics {
-    padding: 45px 0 40px;
+    padding: 45px 30px 40px;
+  }
+}
+
+@media (max-width: 559px) {
+  .home-latest-topics {
+    padding: 45px 15px 40px;
+  }
+}
+
+@media (min-width: 560px) and (max-width: 959px) {
+  .home-latest-topics__inner {
+    width: 100%;
+  }
+}
+
+@media (max-width: 559px) {
+  .home-latest-topics__inner {
+    width: 100%;
   }
 }
 
@@ -729,6 +747,7 @@ textarea {
 @media (min-width: 560px) and (max-width: 959px) {
   .home-latest-topics__list {
     margin-left: 0px;
+    width: 100%;
   }
 }
 
@@ -805,7 +824,7 @@ textarea {
 
 @media (max-width: 559px) {
   .home-contact {
-    padding: 40px 0 40px;
+    padding: 40px 15px 40px;
   }
 }
 
@@ -830,6 +849,7 @@ textarea {
 @media (max-width: 559px) {
   .home-contact__inner {
     display: block;
+    width: 100%;
   }
 }
 
