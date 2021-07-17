@@ -18,7 +18,7 @@
 	&__title {
 		// ロゴなら
 		width: 260px;
-		height: 28px;
+		height: 29px;
 		transition: opacity $transition-change-time ease 0s;
 		img {
 			width: 100%;
@@ -129,8 +129,10 @@
 		z-index: map-get($layer, drawer);
 		background: transparent;
 		transition: all $transition-change-time ease 0s;
+		// 調整
+		margin-top: -5px;
 
-		$header-drawer-bar-height: 3px;
+		$header-drawer-bar-height: 2px;
 		$header-drawer-bar-margin: 3px;
 
 		&.is-checked {
@@ -143,7 +145,7 @@
 		&--bars {
 			display: inline-block;
 			position: relative;
-			width: 30px;
+			width: 24px;
 			height: ($header-drawer-bar-height * 3) + ($header-drawer-bar-margin * 2);// 4px ✖ 3 + 4px ✖ 2
 		}
 		&--bar {
