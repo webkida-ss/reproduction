@@ -1,5 +1,5 @@
 $contact-top-linear-width-pc: 780px;
-.contact-top{ 
+.contact-top {
 	position: relative;
 	height: 451px;
 	background: linear-gradient(
@@ -15,11 +15,14 @@ $contact-top-linear-width-pc: 780px;
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
-	}    
+		// 背景黒透明
+		@extend %bg-darken;
+	}
 	&__inner {
 		position: absolute;
 		top: 156px;
 		right: 150px;
+		z-index: 5;
 		color: $white;
 
 		@include mq(tab-only) {
@@ -29,18 +32,17 @@ $contact-top-linear-width-pc: 780px;
 			// 
 		}
 	}
-	&__title{
+	&__title {
 		// 
 	}
 	&__message {
 		&--main {
 			// 
-		}		
+		}
 		&--sub {
 			margin-top: 10px;
+			font-size: 2rem;
 			font-family: $font-family-notosans;
-            font-size: 2rem;
 		}
-
 	}
 }

@@ -16,13 +16,15 @@
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
+		// 背景黒透明
+		@extend %bg-darken;
 	}
 	&__inner {
 		position: absolute;
 		top: 161px;
 		right: 194px;
 		color: $white;
-
+		z-index: 5;
 		@include mq(tab-only) {
 			// 
 		}
@@ -34,7 +36,7 @@
 	&__message {
 		&--sub {
 			font-weight: $font-weight-bold;
-            font-size: 2rem;
+			font-size: 2rem;
 			span {
 				font-family: $font-family-english;
 			}

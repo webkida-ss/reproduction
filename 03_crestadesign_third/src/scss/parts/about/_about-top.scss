@@ -15,11 +15,14 @@ $about-top-linear-width-pc: (780px / $layout-width-canvas-pc) * 100%;
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
+		// 背景黒透明
+		@extend %bg-darken;
 	}
 	&__inner {
 		position: absolute;
 		top: 156px;
 		right: 170px;
+		z-index: 5;
 		color: $white;
 
 		@include mq(tab-only) {
@@ -29,18 +32,17 @@ $about-top-linear-width-pc: (780px / $layout-width-canvas-pc) * 100%;
 			// 
 		}
 	}
-	&__title{
+	&__title {
 		// 
 	}
 	&__message {
 		&--main {
 			// 
-		}		
+		}
 		&--sub {
 			margin-top: 10px;
+			font-size: 2rem;
 			font-family: $font-family-notosans;
-            font-size: 2rem;
 		}
-
 	}
 }
