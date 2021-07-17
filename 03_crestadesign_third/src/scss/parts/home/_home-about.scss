@@ -7,7 +7,6 @@ $home-about-bg: $light-gray;
 	,transparent $home-about-linear-width-pc, transparent 100%);
 
     &__inner{
-        // width:(*px / $layout-width-canvas-pc) * 100%;
         @include mq(tab-only) {
             // width:(*px / $layout-width-canvas-tab) * 100%;
         }

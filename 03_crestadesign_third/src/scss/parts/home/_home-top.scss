@@ -1,5 +1,6 @@
- $home-top-linear-width-pc: (780px / $layout-width-canvas-pc) * 100%;
-
+$home-top-linear-width-pc: (780px / $layout-width-canvas-pc) * 100%;
+$home-top-linear-width-tab: (562px / $layout-width-canvas-tab) * 100%;
+$home-top-linear-width-sp: (283px / $layout-width-canvas-sp) * 100%;
 .home-top {
 	position: relative;
 	height: 740px;
@@ -9,9 +10,15 @@
 
 	@include mq(tab-only) {
 		height: 1024px;
+		background: linear-gradient(
+			to left, $black-bg-top 0 , $black-bg-top $home-top-linear-width-tab
+			,transparent $home-top-linear-width-tab,transparent 100%);
 	}
 	@include mq(sp) {
 		height: 667px;
+		background: linear-gradient(
+			to left, $black-bg-top 0 , $black-bg-top $home-top-linear-width-sp
+			,transparent $home-top-linear-width-sp,transparent 100%);		
 	}
 
 	&__bg {
