@@ -1,12 +1,15 @@
 $about-visual-padding-pc: 396px;
 .about-visual{ 
     padding: 123px 0 130px;
+    @include mq(tab-only) {
+        padding: 80px 0 90px;
+    }
     &__inner{
         margin: 0 auto;
         width: $layout-width-canvas-pc - ($about-visual-padding-pc * 2);
         max-width: 100%;
         @include mq(tab-only) {
-            // width:(*px / $layout-width-canvas-tab) * 100%;
+            width: $layout-width-canvas-tab - (150px * 2);
             // padding: 0 *px 0 *px;
         }
         @include mq(sp) {
@@ -29,5 +32,8 @@ $about-visual-padding-pc: 396px;
         $about-visual-line-height-pc: 2;
         @include lhCrop($about-visual-line-height-pc);
         line-height: $about-visual-line-height-pc;
+        @include mq(tab-only) {
+            font-size: 1.4rem;
+        }
     }
 }
