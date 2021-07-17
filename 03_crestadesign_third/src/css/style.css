@@ -534,7 +534,7 @@ textarea {
 
 @media (max-width: 559px) {
   .home-about {
-    padding: 78px 0 60px;
+    padding: 78px 0 40px;
     background: linear-gradient(to top, #F0F0F0 0, #F0F0F0 1300px, transparent 1300px, transparent 100%);
   }
 }
@@ -732,6 +732,12 @@ textarea {
   }
 }
 
+@media (max-width: 559px) {
+  .home-latest-topics__list {
+    width: 100%;
+  }
+}
+
 .home-latest-topics__item {
   border-bottom: 1px solid #DDDDDD;
   padding-bottom: 11px;
@@ -752,6 +758,13 @@ textarea {
   margin-top: 12px;
   font-size: 1.4rem;
   font-weight: 600;
+}
+
+@media (max-width: 559px) {
+  .home-latest-topics__item p {
+    font-size: 1.2rem;
+    line-height: 1.16667;
+  }
 }
 
 .home-latest-topics__link {

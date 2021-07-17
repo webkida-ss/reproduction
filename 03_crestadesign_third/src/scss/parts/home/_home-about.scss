@@ -15,7 +15,7 @@ $home-about-bg: $light-gray;
 		,transparent $home-about-linear-height-tab, transparent 100%);
 	}
 	@include mq(sp) {
-		padding: 78px 0 60px;
+		padding: 78px 0 40px;
 		background: linear-gradient(
 		to top, $home-about-bg 0 , $home-about-bg $home-about-linear-height-sp
 		,transparent $home-about-linear-height-sp, transparent 100%);
