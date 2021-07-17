@@ -13,6 +13,32 @@ jQuery(function () {
 	}
 
 	/*********************************************
+	 * ヘッダーの背景チェンジ
+	 *********************************************/
+	$(window).scroll(function () {
+
+		if ($(window).width() > 959) {
+			if ($(this).scrollTop() > 600) {
+				$(".header").addClass("is-bg-gray");
+			} else {
+				$(".header").removeClass("is-bg-gray");
+			}
+		} else if ($(window).width() <= 959 && $(window).width() > 559) {
+			if ($(this).scrollTop() > 900) {
+				$(".header").addClass("is-bg-gray");
+			} else {
+				$(".header").removeClass("is-bg-gray");
+			}
+		} else {
+			if ($(this).scrollTop() > 600) {
+				$(".header").addClass("is-bg-gray");
+			} else {
+				$(".header").removeClass("is-bg-gray");
+			}
+		}
+	})
+
+	/*********************************************
 	 * スムーススクロール
 	 *********************************************/
 	jQuery('a[href^="#"]').click(function () {

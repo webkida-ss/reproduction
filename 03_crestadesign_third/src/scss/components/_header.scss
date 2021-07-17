@@ -9,6 +9,12 @@
 	@include mq(sp) {
 		height: $header-height-sp;
 	}
+
+	// 背景を変える
+	&.is-bg-gray{
+		background: $gray;
+	}
+
 	&__title {
 		// ロゴなら
 		width: 260px;
