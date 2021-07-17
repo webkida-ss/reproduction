@@ -1,10 +1,13 @@
 // ------------------------------------------------------------
 // ページタイトル
 // ------------------------------------------------------------
+$page-title-line-height: (86/72);
 .page-title {
 	font-weight: $font-weight-extrabold;
 	font-size: 7.2rem;
 	font-family: $font-family-english;
+	line-height: $page-title-line-height;
+	@include lhCrop($page-title-line-height);
 	@include mq(tab) {
 		font-size: 5.6rem;
 	}
