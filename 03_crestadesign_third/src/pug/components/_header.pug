@@ -16,7 +16,9 @@ header.header
 		// ナビゲーションリンク
 		nav.header__nav.for-drawer
 			ul.header__nav--list
+				li.header__nav--item
+					a(href="index.html").header__nav--link.js-drawer-item 
+						img(src="./img/icon.png" alt="アイコン")
 				each item in sectionList
 					li.header__nav--item
 						a(href=item.url).header__nav--link.js-drawer-item #{item.label}
-	

@@ -59,11 +59,12 @@
 		right: 0;
 		z-index: map-get($layer, drawer);
 		transform: translateX(105%); // スマホで閉じてる時は非表示（画面外に押し出す）
-		width: 300px;
+		width: 520px;
 		height: 100%;
 		margin-left: auto;// ナビゲーションを右寄せ
 		// padding-top: *px;
-		background: $white;
+		background-color: rgba(0,0,0,.8);
+		color: $white;
 		transition: all $transition-change-time ease 0s;
 
 		&.is-checked {
@@ -71,17 +72,18 @@
 		}
 
 		&--list {
-			padding-top: 50px;
+			padding-top: 180px;
 			display: block;
 			text-align: center;
 		}
 		&--item {
+			font-size: 2rem;
+			font-weight: $font-weight-bold;
+			
 			@include mq(tab-only) {
 				// font-size: rem;
 			}
 			@include mq(sp) {
-				// font-size: rem;
-				// margin-top: px;
 				text-align: center;
 			}
 			& + & {
@@ -92,6 +94,12 @@
 				@include mq(sp) {
 					// 
 				}
+			}
+			img{
+				display: block;
+				width: 42px;
+				height: 45px;
+				margin: 0 auto;
 			}
 		}
 		&--link {
@@ -126,7 +134,8 @@
 	&__drawer { // ドロワーボタン（ハンバーガメニュー）
 		display: flex;
 		align-items: center;
-		z-index: map-get($layer, drawer);
+		// z-index: map-get($layer, drawer);
+		z-index: 50;
 		background: transparent;
 		transition: all $transition-change-time ease 0s;
 		// 調整
@@ -135,9 +144,9 @@
 		$header-drawer-bar-height: 2px;
 		$header-drawer-bar-margin: 3px;
 
-		&.is-checked {
-			transform: translateX(-300px); // ボタンの位置を調整
-		}
+		// &.is-checked {
+		// 	transform: translateX(-300px); // ボタンの位置を調整
+		// }
 		&:hover {
 			cursor: pointer;
 		}
@@ -167,19 +176,19 @@
 				top: ($header-drawer-bar-height + $header-drawer-bar-margin) * 2; // 16px
 			}
 
-			.is-checked & {
-				&:nth-of-type(1) {
-					top: 10px;
-					transform: rotate(-45deg);
-				}
-				&:nth-of-type(2) {
-					background: transparent; // バツ印のため2本目は非表示
-				}
-				&:nth-of-type(3) {
-					top: 10px;
-					transform: rotate(45deg);
-				}
-			}
+			// .is-checked & {
+			// 	&:nth-of-type(1) {
+			// 		top: 10px;
+			// 		transform: rotate(-45deg);
+			// 	}
+			// 	&:nth-of-type(2) {
+			// 		background: transparent; // バツ印のため2本目は非表示
+			// 	}
+			// 	&:nth-of-type(3) {
+			// 		top: 10px;
+			// 		transform: rotate(45deg);
+			// 	}
+			// }
 		}
 		&--text {
 			margin-left: 7px;
@@ -187,9 +196,9 @@
 			font-weight: $font-weight-extrabold;
 			font-size: 1rem;
 			font-family: $font-family-english;
-			&.is-checked{
-				display: none;
-			}
+			// &.is-checked{
+			// 	display: none;
+			// }
 		}
 	}
 	&__drawer-bg {// 背景
