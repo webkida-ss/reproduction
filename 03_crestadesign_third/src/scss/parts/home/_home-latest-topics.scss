@@ -1,7 +1,10 @@
 .home-latest-topics{ 
     padding: 65px 0 60px;
+    @include mq(tab) {
+        padding: 45px 0 40px;
+    }
     &__inner{
-        // width:(*px / $layout-width-canvas-pc) * 100%;
+        
         @include mq(tab-only) {
             // width:(*px / $layout-width-canvas-tab) * 100%;
             // padding: 0 *px 0 *px;
@@ -19,6 +22,9 @@
         margin-top: 28px;
         width: 700px;
         margin-left: auto;
+        @include mq(tab-only) {
+            margin-left: 0px;
+        }
     }
     &__item{
         border-bottom: 1px solid $light-gray-border;
@@ -41,6 +47,10 @@
     &__link{
         margin-top: 30px;
         margin-left: auto;
+        @include mq(tab-only) {
+            margin-left: 0;
+            margin-right: auto;
+        }
     }
 
 }
