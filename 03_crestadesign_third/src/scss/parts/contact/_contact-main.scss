@@ -2,13 +2,18 @@
 	padding: 120px 0;
 
 	$contact-main-line-height-pc: 1.5;
+
+	@include mq(tab-only) {
+		padding: 135px 0 197px;
+	}
 	&__inner {
 		width: 700px;
 		// padding: 0 *px 0 *px;
 
 		@include mq(tab-only) {
-			// width:(*px / $layout-width-canvas-tab) * 100%;
-			// padding: 0 *px 0 *px;
+			width: 668px;
+			max-width: 100%;
+			
 		}
 		@include mq(sp) {
 			// width:(*px / $layout-width-canvas-sp) * 100%;
@@ -23,6 +28,10 @@
 	}
 	&__content {
 		margin-top: 62px;
+		@include mq(tab-only) {
+			margin-top: 20px;
+
+		}
 	}
 	&__list {
 		// 
@@ -258,6 +267,9 @@
 		&.is-content {
 			textarea {
 				height: 212px;
+				@include mq(tab-only) {
+					height: 180px;
+				}
 			}
 		}
 		&.is-privacy-text {
@@ -266,7 +278,13 @@
 				font-weight: $font-weight-extrabold;
 			}
 			textarea {
-				height: 242px;
+				&::first-line{
+					font-weight: $font-weight-bold;
+				}
+				height: 252px;
+				@include mq(tab-only) {
+					height: 226px;
+				}
 			}
 		}
 		&.is-privacy-check {

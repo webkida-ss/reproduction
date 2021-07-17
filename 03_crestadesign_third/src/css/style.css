@@ -1092,7 +1092,24 @@ textarea {
 .contact-top {
   position: relative;
   height: 451px;
-  background: linear-gradient(to left, #222222 0, #222222 780px, transparent 780px, transparent 100%);
+  background: -webkit-gradient(linear, right top, left top, color-stop(0, #222222), color-stop(54.16667%, #222222), color-stop(54.16667%, transparent), to(transparent));
+  background: linear-gradient(to left, #222222 0, #222222 54.16667%, transparent 54.16667%, transparent 100%);
+}
+
+@media (max-width: 959px) {
+  .contact-top {
+    height: 615px;
+    background: -webkit-gradient(linear, right top, left top, color-stop(0, #222222), color-stop(52.86458%, #222222), color-stop(52.86458%, transparent), to(transparent));
+    background: linear-gradient(to left, #222222 0, #222222 52.86458%, transparent 52.86458%, transparent 100%);
+  }
+}
+
+@media (max-width: 559px) {
+  .contact-top {
+    height: 365px;
+    background: -webkit-gradient(linear, right top, left top, color-stop(0, #222222), color-stop(52.8%, #222222), color-stop(52.8%, transparent), to(transparent));
+    background: linear-gradient(to left, #222222 0, #222222 52.8%, transparent 52.8%, transparent 100%);
+  }
 }
 
 .contact-top__bg {
@@ -1107,6 +1124,13 @@ textarea {
   background-repeat: no-repeat;
 }
 
+@media (min-width: 560px) and (max-width: 959px) {
+  .contact-top__bg {
+    width: 75.26042%;
+    height: 529px;
+  }
+}
+
 .contact-top__inner {
   position: absolute;
   top: 165px;
@@ -1115,8 +1139,21 @@ textarea {
   color: #ffffff;
 }
 
+@media (min-width: 560px) and (max-width: 959px) {
+  .contact-top__inner {
+    top: 142px;
+    right: 48px;
+  }
+}
+
 .contact-top__title {
   letter-spacing: 0.063em;
+}
+
+@media (max-width: 959px) {
+  .contact-top__title {
+    font-size: 5.2rem;
+  }
 }
 
 .contact-top__message--sub {
@@ -1126,12 +1163,33 @@ textarea {
   font-weight: 600;
 }
 
+@media (max-width: 959px) {
+  .contact-top__message--sub {
+    font-size: 1.6rem;
+    letter-spacing: 0.05em;
+    margin-top: 18px;
+  }
+}
+
 .contact-main {
   padding: 120px 0;
 }
 
+@media (min-width: 560px) and (max-width: 959px) {
+  .contact-main {
+    padding: 135px 0 197px;
+  }
+}
+
 .contact-main__inner {
   width: 700px;
+}
+
+@media (min-width: 560px) and (max-width: 959px) {
+  .contact-main__inner {
+    width: 668px;
+    max-width: 100%;
+  }
 }
 
 .contact-main__lead {
@@ -1149,6 +1207,12 @@ textarea {
 
 .contact-main__content {
   margin-top: 62px;
+}
+
+@media (min-width: 560px) and (max-width: 959px) {
+  .contact-main__content {
+    margin-top: 20px;
+  }
 }
 
 .contact-main__item + .contact-main__item {
@@ -1330,13 +1394,29 @@ textarea {
   height: 212px;
 }
 
+@media (min-width: 560px) and (max-width: 959px) {
+  .contact-main__item.is-content textarea {
+    height: 180px;
+  }
+}
+
 .contact-main__item.is-privacy-text dt {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
 }
 
 .contact-main__item.is-privacy-text textarea {
-  height: 242px;
+  height: 252px;
+}
+
+.contact-main__item.is-privacy-text textarea::first-line {
+  font-weight: 600;
+}
+
+@media (min-width: 560px) and (max-width: 959px) {
+  .contact-main__item.is-privacy-text textarea {
+    height: 226px;
+  }
 }
 
 .contact-main__submit {
