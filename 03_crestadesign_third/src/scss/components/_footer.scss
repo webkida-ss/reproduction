@@ -9,7 +9,11 @@
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	&__copy-right{
+	small{
+		display: block;
 		letter-spacing: 0.02em;
+	}
+	&__link{
+		margin-top: 5px;
 	}
 }
