@@ -21,7 +21,7 @@ $page-title-line-height-pc: (86/72);
 		font-weight: $font-weight-extrabold;
 		font-size: 3.2rem;
 		font-family: $font-family-english;// 英語の場合
-
+		letter-spacing: .068em;
 		@include mq(sp) {
 			font-size: 2.8rem;
 		}
