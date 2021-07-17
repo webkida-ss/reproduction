@@ -1,7 +1,7 @@
 jQuery(function () {
 
 	/*********************************************
-	 * ヘッダー
+	 * ヘッダーのリンク修正
 	 *********************************************/
 	let locUrl = location.href;
 	if (!locUrl.match(/about.html/) && !locUrl.match(/contact.html/)) {
