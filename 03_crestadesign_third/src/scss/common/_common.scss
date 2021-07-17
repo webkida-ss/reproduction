@@ -5,7 +5,7 @@
 	font-weight: $font-weight-extrabold;
 	font-size: 7.2rem;
 	font-family: $font-family-english;
-	@include mq(tab-only) {
+	@include mq(tab) {
 		font-size: 5.6rem;
 	}
 }
