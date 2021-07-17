@@ -1,6 +1,9 @@
 $about-company-border: 1px solid $light-gray-border;
 .about-company {
 	padding: 120px 0;
+	@include mq(tab-only) {
+		padding: 85px 0 80px;
+	}
 	&__inner {
 		// width:(*px / $layout-width-canvas-pc) * 100%;
 		// padding: 0 *px 0 *px;
@@ -40,6 +43,9 @@ $about-company-border: 1px solid $light-gray-border;
 		dt {
 			width: 144px;
 			font-weight: $font-weight-bold;
+		}
+		@include mq(tab-only) {
+			margin-left: 30px;
 		}
 	}
 	&__map {
