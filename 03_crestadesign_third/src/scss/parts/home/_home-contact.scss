@@ -2,7 +2,10 @@
 	padding: 60px 0 120px;
 	background: $light-gray;
 	@include mq(tab-only) {
-		padding: 40px 0 80px;	
+		padding: 40px 0 80px;
+	}
+	@include mq(sp) {
+		padding: 40px 0 40px;
 	}
 	$home-contact-line-height-pc: 2;
 	&__inner {
@@ -13,13 +16,8 @@
 			width: 520px;
 			margin: 0 0 0 30px;
 		}
-		@include mq(tab-only) {
-			// width:(*px / $layout-width-canvas-tab) * 100%;
-			// padding: 0 *px 0 *px;
-		}
 		@include mq(sp) {
-			// width:(*px / $layout-width-canvas-sp) * 100%;
-			// padding: 0 *px 0 *px;
+			display: block;
 		}
 	}
 	&__img {
@@ -32,11 +30,17 @@
 		@include mq(tab-only) {
 			width: 100%;
 		}
+		@include mq(sp) {
+			width: 100%;
+		}
 	}
 	&__context {
 		width: (440px / $layout-width-inner-pc) * 100%;
 		margin-right: 80px;
 		@include mq(tab-only) {
+			width: 100%;
+		}
+		@include mq(sp) {
 			width: 100%;
 		}
 	}
@@ -45,6 +49,9 @@
 		@include mq(tab-only) {
 			margin-top: 35px;
 			letter-spacing: normal;
+		}
+		@include mq(sp) {
+			margin-top: 33px;
 		}
 	}
 	&__text {
@@ -61,6 +68,9 @@
 		margin-right: auto;
 		@include mq(tab-only) {
 			margin-top: 40px;
+		}
+		@include mq(sp) {
+			margin-top: 28px;
 		}
 	}
 }

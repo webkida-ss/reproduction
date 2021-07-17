@@ -747,6 +747,12 @@ textarea {
   margin-top: 28px;
 }
 
+@media (max-width: 559px) {
+  .home-latest-topics__item + .home-latest-topics__item {
+    margin-top: 20px;
+  }
+}
+
 .home-latest-topics__item time {
   font-family: "Montserrat", sans-serif;
   color: #CECECE;
@@ -779,6 +785,13 @@ textarea {
   }
 }
 
+@media (max-width: 559px) {
+  .home-latest-topics__link {
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+
 .home-contact {
   padding: 60px 0 120px;
   background: #F0F0F0;
@@ -787,6 +800,12 @@ textarea {
 @media (min-width: 560px) and (max-width: 959px) {
   .home-contact {
     padding: 40px 0 80px;
+  }
+}
+
+@media (max-width: 559px) {
+  .home-contact {
+    padding: 40px 0 40px;
   }
 }
 
@@ -808,6 +827,12 @@ textarea {
   }
 }
 
+@media (max-width: 559px) {
+  .home-contact__inner {
+    display: block;
+  }
+}
+
 .home-contact__img {
   width: 580px;
   position: relative;
@@ -818,6 +843,12 @@ textarea {
 }
 
 @media (min-width: 560px) and (max-width: 959px) {
+  .home-contact__img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 559px) {
   .home-contact__img {
     width: 100%;
   }
@@ -834,6 +865,12 @@ textarea {
   }
 }
 
+@media (max-width: 559px) {
+  .home-contact__context {
+    width: 100%;
+  }
+}
+
 .home-contact__title {
   margin-top: 75px;
 }
@@ -842,6 +879,12 @@ textarea {
   .home-contact__title {
     margin-top: 35px;
     letter-spacing: normal;
+  }
+}
+
+@media (max-width: 559px) {
+  .home-contact__title {
+    margin-top: 33px;
   }
 }
 
@@ -866,6 +909,12 @@ textarea {
 @media (min-width: 560px) and (max-width: 959px) {
   .home-contact__link {
     margin-top: 40px;
+  }
+}
+
+@media (max-width: 559px) {
+  .home-contact__link {
+    margin-top: 28px;
   }
 }
 
