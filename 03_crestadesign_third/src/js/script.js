@@ -8,7 +8,7 @@ jQuery(function () {
 		let links = jQuery('.header__nav--link');
 		for (i = 0; i < links.length; i++) {
 			let item = jQuery(links[i]);
-			console.log(item.attr('href', item.attr('href').replace('index.html', '')));
+			item.attr('href', item.attr('href').replace('index.html', ''))
 		}
 	}
 
