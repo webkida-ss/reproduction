@@ -37,6 +37,10 @@ $contact-top-linear-width-sp: (198px / $layout-width-canvas-sp) * 100%;
 			width: (578px / $layout-width-canvas-tab) * 100%;
 			height: 529px;
 		}
+		@include mq(sp) {
+			width: (287px / $layout-width-canvas-sp) * 100%;
+			height: 270px;
+		}		
 	}
 	&__inner {
 		position: absolute;
@@ -50,7 +54,8 @@ $contact-top-linear-width-sp: (198px / $layout-width-canvas-sp) * 100%;
 			right: 48px;
 		}
 		@include mq(sp) {
-			// 
+			top: 140px;
+			right: 20px;
 		}
 	}
 	&__title {
@@ -69,6 +74,9 @@ $contact-top-linear-width-sp: (198px / $layout-width-canvas-sp) * 100%;
 				font-size: 1.6rem;
 				letter-spacing: 0.05em;
 				margin-top: 18px;
+			}
+			@include mq(sp) {
+				text-align: right;
 			}
 		}
 	}

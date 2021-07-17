@@ -25,6 +25,10 @@
 		font-family: $font-family-notosans;
 
 		@include lhCrop($contact-main-line-height-pc);
+		@include mq(sp) {
+			font-size: 1.4rem;
+			line-height: (24/14);
+		}
 	}
 	&__content {
 		margin-top: 62px;
