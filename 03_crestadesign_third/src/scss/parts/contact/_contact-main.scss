@@ -33,7 +33,7 @@
 	// =================================================================================
 	&__item {
 		& + & {
-			margin-top: 45px;
+			margin-top: 44px;
 		}
 
 		// タイトル ===============================================
@@ -68,6 +68,7 @@
 			input:not([type='radio']):not([type='checkbox']),
 			textarea {
 				width: 100%;
+				font-size: 1.6rem;
 				&:hover,
 				&:focus {
 					border: 1px solid $blue-active;
@@ -192,7 +193,7 @@
 			label {
 				position: relative;
 				// カスタムボタンを配置するスペース確保
-				margin-left: 80px;
+				margin-left: 75px;
 				cursor: pointer;
 				// カスタムボタン
 				&::before,
@@ -230,7 +231,7 @@
 			}
 			&:first-child {
 				label {
-					margin-left: 50px;
+					margin-left: 40px;
 				}
 			}
 		}
@@ -238,7 +239,9 @@
 		// 個別設定
 		// ===========================
 		&.is-kind {
-			// 
+			dd{
+				margin-top: 23px;
+			}
 		}
 		&.is-company {
 			// 
@@ -258,6 +261,10 @@
 			}
 		}
 		&.is-privacy-text {
+			dt{
+				font-family: $font-family-english;
+				font-weight: $font-weight-extrabold;
+			}
 			textarea {
 				height: 242px;
 			}
@@ -267,6 +274,6 @@
 		}
 	}
 	&__submit {
-		margin: 41px auto 0;
+		margin: 45px auto 0;
 	}
 }

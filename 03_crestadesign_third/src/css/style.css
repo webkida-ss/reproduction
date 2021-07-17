@@ -1152,7 +1152,7 @@ textarea {
 }
 
 .contact-main__item + .contact-main__item {
-  margin-top: 45px;
+  margin-top: 44px;
 }
 
 .contact-main__item dt.is-required {
@@ -1185,6 +1185,7 @@ textarea {
 .contact-main__item dd input:not([type='radio']):not([type='checkbox']),
 .contact-main__item dd textarea {
   width: 100%;
+  font-size: 1.6rem;
 }
 
 .contact-main__item dd input:not([type='radio']):not([type='checkbox']):hover, .contact-main__item dd input:not([type='radio']):not([type='checkbox']):focus,
@@ -1288,7 +1289,7 @@ textarea {
 
 .contact-main__item--radio label {
   position: relative;
-  margin-left: 80px;
+  margin-left: 75px;
   cursor: pointer;
 }
 
@@ -1318,11 +1319,20 @@ textarea {
 }
 
 .contact-main__item--radio:first-child label {
-  margin-left: 50px;
+  margin-left: 40px;
+}
+
+.contact-main__item.is-kind dd {
+  margin-top: 23px;
 }
 
 .contact-main__item.is-content textarea {
   height: 212px;
+}
+
+.contact-main__item.is-privacy-text dt {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
 }
 
 .contact-main__item.is-privacy-text textarea {
@@ -1330,7 +1340,7 @@ textarea {
 }
 
 .contact-main__submit {
-  margin: 41px auto 0;
+  margin: 45px auto 0;
 }
 
 .footer {
