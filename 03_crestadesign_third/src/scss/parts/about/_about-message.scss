@@ -44,7 +44,9 @@
     }
 
 	&__title {
-		// 
+        @include mq(sp) {
+			font-size: 3.2rem;
+		}
 	}
     &__context{
         margin-top: 30px;

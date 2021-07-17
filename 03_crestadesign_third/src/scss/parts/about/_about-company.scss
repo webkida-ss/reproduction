@@ -27,8 +27,10 @@ $about-company-border: 1px solid $light-gray-border;
 			width: 100%;
 			margin-top: 30px;
 			content: '';
-
 			border-bottom: $about-company-border;
+		}
+		@include mq(sp) {
+			font-size: 3.2rem;
 		}
 	}
 	&__list {

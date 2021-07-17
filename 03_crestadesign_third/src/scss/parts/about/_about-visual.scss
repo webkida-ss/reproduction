@@ -19,7 +19,9 @@ $about-visual-padding-pc: 396px;
     }
 
     &__title{
-        // 
+        @include mq(sp) {
+			font-size: 3.2rem;
+		}
     }
     &__sub-title{
         margin-top: 33px;
