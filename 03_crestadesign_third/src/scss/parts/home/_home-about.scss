@@ -42,6 +42,9 @@ $home-about-bg: $light-gray;
 		@include mq(tab-only) {
 			height: 474px;
 		}
+		@include mq(sp) {
+			height: 541px;
+		}
 		&--context {
 			position: absolute;
 			top: 50%;
@@ -64,6 +67,7 @@ $home-about-bg: $light-gray;
 				transform: translate(-50%,-50%);
 				width: calc(100% - 15px * 2);
 				height: auto;
+				padding: 55px 30px 50px;
 			}
 		}
 
@@ -81,9 +85,15 @@ $home-about-bg: $light-gray;
 			span {
 				letter-spacing: .035em;
 			}
+			@include mq(sp) {
+				font-size: 1.4rem;
+			}
 		}
 		&--link {
 			margin-top: 34px;
+			@include mq(sp) {
+				margin-top: 23px;
+			}
 		}
 	}
 
