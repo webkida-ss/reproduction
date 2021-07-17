@@ -59,6 +59,7 @@
 		right: 0;
 		z-index: map-get($layer, drawer);
 		transform: translateX(105%); // スマホで閉じてる時は非表示（画面外に押し出す）
+		max-width: 100%;
 		width: 520px;
 		height: 100%;
 		margin-left: auto;// ナビゲーションを右寄せ
