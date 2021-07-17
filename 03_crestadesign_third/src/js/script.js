@@ -1,14 +1,21 @@
 jQuery(function () {
 
 	/*********************************************
-	 * WOW初期化
+	 * ヘッダー
 	 *********************************************/
-	new WOW().init();
+	let locUrl = location.href;
+	if (!locUrl.match(/about.html/) && !locUrl.match(/contact.html/)) {
+		let links = jQuery('.header__nav--link');
+		for (i = 0; i < links.length; i++) {
+			let item = jQuery(links[i]);
+			console.log(item.attr('href', item.attr('href').replace('index.html', '')));
+		}
+	}
 
 	/*********************************************
 	 * スムーススクロール
 	 *********************************************/
-	jQuery('a[href^="#"]').click(function () {
+	jQuery('a[href^="index.html#"]').click(function () {
 		let header = jQuery('.header').innerHeight();
 		let speed = 500;
 		let id = jQuery(this).attr("href"); // 遷移先ID（href属性）
