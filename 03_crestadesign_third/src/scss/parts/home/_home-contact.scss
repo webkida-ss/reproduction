@@ -20,9 +20,11 @@
 	}
 	&__img {
 		width: (580px / $layout-width-inner-pc) * 100%;
+		position: relative;
 		img {
 			width: 100%;
 		}
+		@extend %bg-darken;
 	}
 	&__context {
 		width: (440px / $layout-width-inner-pc) * 100%;
