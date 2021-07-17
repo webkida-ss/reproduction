@@ -1,6 +1,6 @@
 $home-about-linear-height-pc: 771px;
 $home-about-linear-height-tab: 1400px;
-$home-about-linear-height-sp: 1000px;
+$home-about-linear-height-sp: 1300px;
 $home-about-bg: $light-gray;
 .home-about {
 	padding: 120px 0 60px;
@@ -109,7 +109,8 @@ $home-about-bg: $light-gray;
 		}
 		@include mq(sp) {
 			display: block;
-			padding: 15px;
+			padding: 0 15px;
+			margin-top: 45px;
 		}
 
 		&--item {

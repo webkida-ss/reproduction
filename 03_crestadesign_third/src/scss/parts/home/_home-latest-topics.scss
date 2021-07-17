@@ -3,6 +3,9 @@
     @include mq(tab) {
         padding: 45px 0 40px;
     }
+    @include mq(sp) {
+        // padding: 65px 0 40px;
+    }
     &__inner{
         
         @include mq(tab-only) {
