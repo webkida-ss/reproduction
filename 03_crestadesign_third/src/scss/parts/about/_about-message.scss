@@ -21,6 +21,14 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        @include mq(tab-only) {
+            width: 320px;
+            height: 216px;
+        }
+        @include mq(sp) {
+            width: 340px;
+            height: 230px;
+        }
 	}
 
     &__content{
@@ -28,7 +36,9 @@
         padding: 123px 185px 70px;
         background: $light-gray;
         margin-left: auto;
-        @include mq(sp) {
+        @include mq(tab-only) {
+            width: 494px;
+            padding: 100px 40px 40px;
             
         }
     }
@@ -41,5 +51,7 @@
         $about-message-line-height-pc: 2;
         @include lhCrop($about-message-line-height-pc);
         line-height: $about-message-line-height-pc;
+        @include mq(tab-only) {
+        }
     }
 }
