@@ -52,13 +52,18 @@ $about-top-linear-width-sp: (198px / $layout-width-canvas-sp) * 100%;
 			right: 95px;
 		}
 		@include mq(sp) {
-			// 
+			top: 160px;
+			right: 25px;
+
 		}
 	}
 	&__title {
 		letter-spacing: 0.063em;
-		@include mq(tab-only) {
+		@include mq(tab) {
 			font-size: 5.2rem;
+		}
+		@include mq(sp) {
+			letter-spacing: normal;
 		}
 	}
 	&__message {
@@ -68,7 +73,7 @@ $about-top-linear-width-sp: (198px / $layout-width-canvas-sp) * 100%;
 			font-size: 2rem;
 			font-family: $font-family-notosans;
 			font-weight: $font-weight-bold;
-			@include mq(tab-only) {
+			@include mq(tab) {
 				margin-top: 20px;
 				font-size: 1.6rem;
 			}	
