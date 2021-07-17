@@ -6,6 +6,9 @@
 	@include mq(tab-only) {
 		padding: 135px 0 197px;
 	}
+	@include mq(sp) {
+		padding: 80px 0;
+	}
 	&__inner {
 		width: 700px;
 		// padding: 0 *px 0 *px;
@@ -34,7 +37,9 @@
 		margin-top: 62px;
 		@include mq(tab-only) {
 			margin-top: 20px;
-
+		}
+		@include mq(sp) {
+			margin-top: 50px;
 		}
 	}
 	&__list {
@@ -69,6 +74,9 @@
 					content: '必須';
 				}
 			}
+			@include mq(sp) {
+				font-weight: $font-weight-bold;
+			}
 		}
 
 		// 入力欄 ==================================================
@@ -87,6 +95,9 @@
 					border: 1px solid $blue-active;
 					box-shadow: 0px 0px 5px 0px $blue-active;
 					outline: none;
+				}
+				@include mq(sp) {
+					font-size: 1.4rem;
 				}
 			}
 			input {
@@ -172,6 +183,13 @@
 					border-right: 2px solid $white;
 				}
 			}
+			@include mq(sp) {
+				padding-left: 30px;
+				text-align-last: left;
+				
+				font-size: 1.4rem;
+				
+			}
 		}
 		// ============================================
 		// ラジオボタン（横並びかつ、ラベルとボタンも横並び）
@@ -245,6 +263,19 @@
 			&:first-child {
 				label {
 					margin-left: 40px;
+					@include mq(sp) {
+						margin-left: 30px;
+					}
+				}
+			}
+			@include mq(sp) {
+				display: block;
+				margin-left: 10px;
+				label{
+					margin-left: 30px;
+				}
+				& + & {
+					margin-top: 15px;
 				}
 			}
 		}
