@@ -25,10 +25,12 @@
 
     &__content{
         width: 770px;
-        padding: 120px 185px 90px;
+        padding: 123px 185px 70px;
         background: $light-gray;
         margin-left: auto;
-    
+        @include mq(sp) {
+            
+        }
     }
 
 	&__title {

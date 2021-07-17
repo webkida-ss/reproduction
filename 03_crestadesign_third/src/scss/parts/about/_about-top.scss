@@ -1,10 +1,24 @@
 $about-top-linear-width-pc: (780px / $layout-width-canvas-pc) * 100%;
+$about-top-linear-width-tab: (406px / $layout-width-canvas-tab) * 100%;
+$about-top-linear-width-sp: (198px / $layout-width-canvas-sp) * 100%;
 .about-top {
 	position: relative;
 	height: 464px;
 	background: linear-gradient(
 	to left, $black-bg-top 0 , $black-bg-top $about-top-linear-width-pc
 	,transparent $about-top-linear-width-pc,transparent 100%);
+	@include mq(tab-only) {
+		background: linear-gradient(
+			to left, $black-bg-top 0 , $black-bg-top $about-top-linear-width-tab
+			,transparent $about-top-linear-width-tab,transparent 100%);
+		height: 615px;
+	}
+	@include mq(sp) {
+		background: linear-gradient(
+			to left, $black-bg-top 0 , $black-bg-top $about-top-linear-width-sp
+			,transparent $about-top-linear-width-sp,transparent 100%);
+		height: 449px;		
+	}
 	&__bg {
 		position: absolute;
 		top: 0;
@@ -20,8 +34,8 @@ $about-top-linear-width-pc: (780px / $layout-width-canvas-pc) * 100%;
 	}
 	&__inner {
 		position: absolute;
-		top: 156px;
-		right: 170px;
+		top: 165px;
+		right: 165px;
 		z-index: 5;
 		color: $white;
 
@@ -33,14 +47,12 @@ $about-top-linear-width-pc: (780px / $layout-width-canvas-pc) * 100%;
 		}
 	}
 	&__title {
-		// 
+		letter-spacing: 0.063em;
 	}
 	&__message {
-		&--main {
-			// 
-		}
+
 		&--sub {
-			margin-top: 10px;
+			margin-top: 13px;
 			font-size: 2rem;
 			font-family: $font-family-notosans;
 		}
