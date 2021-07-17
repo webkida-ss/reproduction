@@ -43,6 +43,7 @@
         }
         @include mq(sp) {
             width: 345px;
+            max-width: 100%;
             padding: 126px 28px 70px;
         }
     }
