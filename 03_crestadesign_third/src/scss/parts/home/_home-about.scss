@@ -2,123 +2,128 @@ $home-about-linear-height-pc: 771px;
 $home-about-linear-height-tab: 1000px;
 $home-about-linear-height-sp: 1000px;
 $home-about-bg: $light-gray;
-.home-about{ 
-    padding: 120px 0 60px;
-    background: linear-gradient(
-        to top, $home-about-bg 0 , $home-about-bg $home-about-linear-height-pc
-        ,transparent $home-about-linear-height-pc, transparent 100%);
-    @include mq(tab-only) { 
-        padding: 80px 0 60px;
-        background: linear-gradient(
-            to top, $home-about-bg 0 , $home-about-bg $home-about-linear-height-tab
-            ,transparent $home-about-linear-height-tab, transparent 100%);
-    }
-    @include mq(sp) {
-        padding: 78px 0 60px;
-        background: linear-gradient(
-            to top, $home-about-bg 0 , $home-about-bg $home-about-linear-height-sp
-            ,transparent $home-about-linear-height-sp, transparent 100%);
-    }
-    &__inner{
-        @include mq(tab-only) {
-            width: 100%;
-        }
-        @include mq(sp) {
-            width: 100%;
-        }
-    }
+.home-about {
+	padding: 120px 0 60px;
+	background: linear-gradient(
+	to top, $home-about-bg 0 , $home-about-bg $home-about-linear-height-pc
+	,transparent $home-about-linear-height-pc, transparent 100%);
 
-    &__upper{
-        position: relative;
-        height: 607px;
-        background-image: url(../img/home/about-us.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        
-        &--context{
-            position: absolute;
-            top: 50%;
-            left: 50px;
-            transform: translateY(-50%);
-            background: $white;
-            width: 590px;
-            height: 387px;
-            padding: 53px 33px 0px 30px;
-            @include mq(tab-only) {
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-            }
-            @include mq(sp) {
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-                
-                width: calc(100% - 15px * 2);
-                height: auto;
-            }
-        }
+	@include mq(tab-only) {
+		padding: 80px 0 60px;
+		background: linear-gradient(
+		to top, $home-about-bg 0 , $home-about-bg $home-about-linear-height-tab
+		,transparent $home-about-linear-height-tab, transparent 100%);
+	}
+	@include mq(sp) {
+		padding: 78px 0 60px;
+		background: linear-gradient(
+		to top, $home-about-bg 0 , $home-about-bg $home-about-linear-height-sp
+		,transparent $home-about-linear-height-sp, transparent 100%);
+	}
+	&__inner {
+		@include mq(tab-only) {
+			width: 100%;
+		}
+		@include mq(sp) {
+			width: 100%;
+		}
+	}
 
-        &--title{
-            margin-bottom: 30px;
-        }
-        &--text{
-            $home-about-line-height-pc: 2;
-            @include lhCrop($home-about-line-height-pc);
-            line-height: $home-about-line-height-pc;
-            font-family: $font-family-notosans;
-            letter-spacing: -0.01em;
-            text-align: justify;
-            span{
-                letter-spacing: 0.035em;
-            }
-        }
-        &--link{
-            margin-top: 34px;
-        }
-    }
+	&__upper {
+		position: relative;
+		height: 607px;
+		background-image: url(../img/home/about-us.png);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
 
-    &__lower{
-        margin-top: 84px;
-        display: flex;
-        justify-content: space-between;
-        
-        @include mq(tab-only) {
-            display: block;
-            padding-left: 30px;
-        }
-        @include mq(sp) {
-            display: block;
-            padding: 15px;
-        }
+		@extend %bg-darken;
 
-        &--item{
-            width: ( 520px/$layout-width-inner-pc) *100%;
-            @include mq(tab-only) {
-                & + &{
-                    margin-top: 80px;
-                }
-            }
-            @include mq(sp) {
-                width: 100%;
-                & + &{
-                    margin-top: 40px;
-                }
-            }
-        }
-        &--img{
-            margin-top: 33px;
-            img{
-                width: 100%;
-            }
-        }
-        &--text{
-            margin-top: 30px;
-        }
-        &--link{
-            margin-top: 30px;
-        }
-        
-    }
+		&--context {
+			position: absolute;
+			top: 50%;
+			left: 50px;
+			z-index: 5;
+			transform: translateY(-50%);
+			width: 590px;
+			height: 387px;
+			padding: 53px 33px 0px 30px;
+			background: $white;
+
+			@include mq(tab-only) {
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+			}
+			@include mq(sp) {
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				width: calc(100% - 15px * 2);
+				height: auto;
+			}
+		}
+
+		&--title {
+			margin-bottom: 30px;
+		}
+        $home-about-line-height-pc: 2;
+		&--text {
+			line-height: $home-about-line-height-pc;
+			font-family: $font-family-notosans;
+			letter-spacing: -.01em;
+			text-align: justify;
+
+			@include lhCrop($home-about-line-height-pc);
+			span {
+				letter-spacing: .035em;
+			}
+		}
+		&--link {
+			margin-top: 34px;
+		}
+	}
+
+	&__lower {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 84px;
+
+		@include mq(tab-only) {
+			display: block;
+			padding-left: 30px;
+		}
+		@include mq(sp) {
+			display: block;
+			padding: 15px;
+		}
+
+		&--item {
+			width: ( 520px/$layout-width-inner-pc) *100%;
+
+			@include mq(tab-only) {
+				& + & {
+					margin-top: 80px;
+				}
+			}
+			@include mq(sp) {
+				width: 100%;
+				& + & {
+					margin-top: 40px;
+				}
+			}
+		}
+		&--img {
+			margin-top: 33px;
+			img {
+				width: 100%;
+			}
+		}
+		&--text {
+			margin-top: 30px;
+		}
+		&--link {
+			margin-top: 30px;
+		}
+	}
 }
